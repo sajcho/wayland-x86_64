@@ -1,0 +1,56 @@
+# Description:	Standalone fork of systemd's elogind
+# URL:		https://github.com/elogind/elogind
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	intltool python3-jinja2 shadow
+
+name=elogind
+version=252.9
+release=2
+source=(https://github.com/${name}/${name}/archive/v${version}/${name}-v${version}.tar.gz \
+	elogind-user \
+	elogind.run \
+	elogind.wrapper)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dcgroup-controller=elogind \
+		-Ddefault-hierarchy=hybrid \
+		-Dhalt-path=/sbin/halt \
+		-Dreboot-path=/sbin/reboot \
+		-Dpamconfdir=/etc/pam.d \
+		-Dpamlibdir=/lib/security \
+		-Drootlibdir=/lib/ \
+		-Drootlibexecdir=/usr/lib/elogind \
+		-Ddefault-kill-user-processes=false \
+		-Dman=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	# Claim compatiblity with systemd and systemd-logind
+	ln -s libelogind.pc $PKG/usr/lib/pkgconfig/libsystemd.pc
+	ln -s libelogind.pc $PKG/usr/lib/pkgconfig/libsystemd-logind.pc
+	ln -sr $PKG/usr/include/elogind $PKG/usr/include/systemd
+
+	# Install headers from elogind
+	install -D -m 0644 src/systemd/sd-id128.h usr/include/sd-id128.h
+	install -D -m 0644 src/systemd/_sd-common.h usr/include/_sd-common.h
+
+        # elogind runit service
+	install -d $PKG/etc/sv/elogind
+	install -m 0755 $SRC/elogind.run $PKG/etc/sv/elogind/run
+	ln -s /run/runit/supervise.elogind $PKG/etc/sv/elogind/supervise
+
+	mv $PKG/lib/elogind/libelogind-shared-252.9.so \
+		 $PKG/lib
+	rm -r $PKG/lib/elogind
+
+	install -m 0755 $SRC/elogind.wrapper $PKG/usr/lib/elogind
+	install -m 0644 $SRC/elogind-user $PKG/etc/pam.d/elogind-user
+
+	rm -r $PKG/usr/share/{bash-completion,doc,locale,zsh}
+}

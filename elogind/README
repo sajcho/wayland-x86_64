@@ -1,0 +1,7 @@
+
+NOTICE:
+
+      Do not turn on the elogind service until the dbus port is installed.
+      This dependency cannot be defined in the elogind port.
+
+      !!! These are circular dependencies !!!

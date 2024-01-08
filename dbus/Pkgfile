@@ -1,0 +1,61 @@
+# Description:	A message bus system - with support elogind
+# URL:		https://freedesktop.org/wiki/Software/dbus
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	autoconf-archive elogind
+
+name=dbus
+version=1.14.10
+release=1
+source=(https://dbus.freedesktop.org/releases/dbus/${name}-${version}.tar.xz \
+	dbus-daemon-optional.patch \
+	dbus-enable-elogind.patch \
+	dbus.check \
+	dbus.run)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i $SRC/dbus-daemon-optional.patch
+	patch -p1 -i $SRC/dbus-enable-elogind.patch
+
+	autoreconf -fiv
+
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix=/usr \
+		--with-dbus-daemondir=/usr/sbin \
+		--localstatedir=/var \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/lib/dbus \
+		--enable-elogind \
+		--disable-asserts \
+		--disable-systemd \
+		--disable-selinux \
+		--disable-static \
+		--disable-user-session \
+		--disable-doxygen-docs \
+		--disable-xml-docs \
+		--with-dbus-user=messagebus \
+		--with-init-scripts=none \
+		--with-console-auth-dir=/run/console \
+		--with-system-pid-file=/run/${name}/${name}.pid \
+		--with-system-socket=/run/${name}/system_bus_socket
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	# dbus runit service
+	install -d $PKG/etc/sv/dbus
+	install -m 0755 $SRC/dbus.check $PKG/etc/sv/dbus/check
+	install -m 0755 $SRC/dbus.run $PKG/etc/sv/dbus/run
+	ln -s /run/runit/supervise.dbus $PKG/etc/sv/dbus/supervise
+
+	ln -s /var/lib/dbus/machine-id $PKG/etc
+	ln -s /usr/sbin/dbus-daemon $PKG/usr/bin/dbus-daemon
+
+	rm -r $PKG/usr/share/{doc,xml}
+
+	find $PKG -type f -name '*.la' -delete
+}

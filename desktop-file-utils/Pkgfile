@@ -1,0 +1,21 @@
+# Description:	Command-line utilities for working with desktop entries
+# URL:		http://www.freedesktop.org/software/desktop-file-utils/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	glib
+
+name=desktop-file-utils
+version=0.27
+release=1
+source=(http://freedesktop.org/software/${name}/releases/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	rm -r $PKG/usr/share/emacs
+}

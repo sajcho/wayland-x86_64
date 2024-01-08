@@ -1,0 +1,8 @@
+untrusted comment: verify with wayland-x86_64.pub
+RWQLTWOc/NemagWItDmqsrFnF0vxpz/5GIgHKyksv3IdEiUa6qiMmOVt19mj3yjnE06e6Xq69yYSaS2wJW3qqfNgN27pOJXm9Ao=
+SHA256 (Pkgfile) = abc71513da1cf52f6ebf24898c09391ddd3909c24d8d507c9c0b7843101979c9
+SHA256 (.footprint) = fce3ac92c564644f9cfd0a1fc4f861c279533e1a708a1f3bea41d5babee6666b
+SHA256 (elogind-v252.9.tar.gz) = 7af8caa8225a406e77fb99c9f33dba5e1f0a94f0e1277c9d91dcfc016f116d85
+SHA256 (elogind-user) = fbbe08ad03a627c5774541ff51947afa61ed686fe622f52219afda16bedd845d
+SHA256 (elogind.run) = efb9e254d8470004d369b95724354bd846bc40e3d4356094bef53fbcec5bef6f
+SHA256 (elogind.wrapper) = 4fb9ad7bb72929164b4a3978d03f01794795cf3b1974d57db1b7816978627913
