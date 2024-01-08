@@ -1,0 +1,22 @@
+# Description:	A lightweight notification daemon for Wayland
+# URL:		https://wayland.emersion.fr/mako/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	elogind cairo gdk-pixbuf glib pango scdoc wayland-protocols
+
+name=mako
+version=1.8.0
+release=1
+source=(https://github.com/emersion/mako/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dsd-bus-provider=libelogind \
+		-Dicons=enabled \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

@@ -1,0 +1,39 @@
+# Description:	Mesa DRI OpenGL library
+# URL:		http://www.mesa3d.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	elfutils libdrm llvm-toolchain python3-mako wayland-protocols
+
+name=mesa
+version=24.0.0-devel
+_commit=a84729d36866bc79619523065a6038c3d8444f97
+# Author: Marek Olšák <maraeo@gmail.com>
+# Date:   Sat Jan 6 15:22:57 2024 -0500
+release=1
+source=(https://gitlab.freedesktop.org/mesa/mesa/-/archive/${_commit}/${name}-${_commit}.tar.gz \
+	no-unlink-megadrivers.patch)
+
+build() {
+	cd ${name}-${_commit}
+
+	# from alpine linux:
+	# this converts megadriver installation to use symlinks instead of hardlinks,
+	# and simplifies disk representation (hardlinks are less easy to see)
+
+	patch -p1 -i $SRC/no-unlink-megadrivers.patch
+
+	build-meson \
+		-Dplatforms=wayland \
+		-Dgallium-drivers=r300,r600,radeonsi,swrast,nouveau \
+		-Dvideo-codecs=av1dec,av1enc,vp9dec,h264dec,h264enc,h265dec,h265enc \
+		-Dvulkan-drivers="" \
+		-Dglx=disabled \
+		-Dlibunwind=disabled \
+		-Dlmsensors=disabled \
+		-Dvalgrind=disabled \
+		-Dbuild-tests=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

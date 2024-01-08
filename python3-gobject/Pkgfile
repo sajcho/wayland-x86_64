@@ -1,0 +1,23 @@
+# Description:	Python bindings for the GObject library
+# URL:		https://wiki.gnome.org/Projects/PyGObject
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gobject-introspection python3-cairo
+
+name=python3-gobject
+_realname=pygobject
+version=3.46.0
+release=2
+source=(https://download.gnome.org/sources/${_realname}/${version%.*}/${_realname}-${version}.tar.xz)
+
+build() {
+	cd ${_realname}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	/usr/bin/python3 -m compileall -d /usr/lib $PKG/usr/lib
+	/usr/bin/python3 -O -m compileall -d /usr/lib $PKG/usr/lib
+}
