@@ -1,0 +1,27 @@
+# Description:	X keyboard configuration database
+# URL:		https://cgit.freedesktop.org/xkeyboard-config/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gettext meson perl libxslt
+
+name=xkeyboard-config
+version=2.40
+release=1
+source=(https://www.x.org/releases/individual/data/${name}/${name}-${version}.tar.xz \
+	locale.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	# keyboard - locale
+	install -d $PKG/usr/share/X11
+	cp -r $SRC/locale $PKG/usr/share/X11
+
+	rm -r $PKG/usr/share/locale
+	find $PKG -name README -delete
+}

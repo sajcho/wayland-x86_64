@@ -1,0 +1,29 @@
+# Description:	Headers defining the core protocol and extensions for the X Window System
+# URL:		http://xorg.freedesktop.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=xorgproto
+version=2023.2
+release=1
+source=(https://www.x.org/releases/individual/proto/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dlegacy=true \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	# cleanup
+	rm -r $PKG/usr/share/doc
+	rm $PKG/usr/include/X11/extensions/apple*
+	rm $PKG/usr/include/X11/extensions/windows*
+	rm $PKG/usr/share/pkgconfig/apple*
+	rm $PKG/usr/share/pkgconfig/windows*
+	rm $PKG/usr/include/X11/extensions/vldXvMC.h # libxvmc-dev >= 1.0.12-r0
+	rm $PKG/usr/include/X11/extensions/XKBgeom.h # libx11-dev >= 1.6.9-r0
+}
