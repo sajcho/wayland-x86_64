@@ -1,0 +1,28 @@
+# Description:	Fast, lightweight and minimalistic Wayland terminal emulator
+# URL:		https://codeberg.org/dnkl/foot
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	fcft libxkbcommon
+
+name=foot
+version=1.16.2
+release=1
+source=(https://codeberg.org/dnkl/${name}/archive/${version}.tar.gz \
+	terminus.tar.xz)
+renames=${name}-${version}.tar.gz
+
+build() {
+	cd ${name}
+
+	build-meson \
+		-Dgrapheme-clustering=enabled \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	install -d $PKG/usr/share/fonts/misc
+	cp -R $SRC/terminus $PKG/usr/share/fonts/misc
+
+	rm -r $PKG/usr/share/{bash-completion,doc,fish,zsh}
+}

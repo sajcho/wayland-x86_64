@@ -1,0 +1,15 @@
+# Description:	Noto fonts
+# URL:		https://www.google.com/get/noto/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	fontconfig
+
+name=font-noto-ttf
+version=24.1.1
+release=1
+source=(https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-${version}.tar.gz)
+
+build() {
+	find notofonts.github.io-noto-monthly-release-${version}/fonts/*/unhinted/ttf \
+		-iname "*.ttf" \
+		-execdir install -D -m 0644 {} $PKG/usr/share/fonts/truetype/noto/{} \;
+}

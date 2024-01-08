@@ -1,0 +1,26 @@
+# Description:	Simple library for font loading and glyph rasterization using FontConfig, FreeType and pixman.
+# URL:		https://codeberg.org/dnkl/fcft
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	harfbuzz scdoc tllist utf8proc wayland-protocols
+
+name=fcft
+version=3.1.7
+release=1
+source=(https://codeberg.org/dnkl/${name}/archive/${version}.tar.gz)
+renames=${name}-${version}.tar.gz
+
+build() {
+	cd ${name}
+
+	build-meson \
+		-Dtest-text-shaping=true \
+		-Drun-shaping=enabled \
+		-Dgrapheme-shaping=enabled \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	rm -r $PKG/usr/share/doc
+}

@@ -1,0 +1,28 @@
+# Description:	Font family based on the Bitstream Vera Fonts with a wider range of characters
+# URL:		https://dejavu-fonts.github.io/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	fontconfig
+
+name=font-dejavu-ttf
+version=2.37
+release=1
+source=(http://downloads.sourceforge.net/project/dejavu/dejavu/${version}/dejavu-fonts-ttf-${version}.tar.bz2 \
+	45-dejavu.conf 90-tt-dejavu.conf)
+
+build() {
+	mkdir -p $PKG/usr/share/fonts/truetype/dejavu \
+		$PKG/etc/fonts/conf.avail \
+		$PKG/etc/fonts/conf.d
+
+	install -m 0644 $SRC/dejavu-fonts-ttf-${version}/ttf/*.ttf \
+		$PKG/usr/share/fonts/truetype/dejavu
+
+	install -m 0644 $SRC/dejavu-fonts-ttf-${version}/fontconfig/*.conf \
+		$PKG/etc/fonts/conf.avail
+
+	cd $PKG/etc/fonts/conf.d
+	for j in $SRC/*.conf; do
+		install -m644 "$j" $PKG/etc/fonts/conf.avail/
+		ln -sf /etc/fonts/conf.avail/${j##*/}
+	done
+}

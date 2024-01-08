@@ -1,0 +1,23 @@
+# Description:	GObject-based wrapper around the Exiv2 library
+# URL:		https://wiki.gnome.org/Projects/gexiv2
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	exiv2 python3-gobject
+
+name=gexiv2
+version=0.14.2
+release=2
+source=(https://download.gnome.org/sources/${name}/${version%.*}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dintrospection=true \
+		-Dvapi=false \
+		-Dgtk_doc=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

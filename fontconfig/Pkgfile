@@ -1,0 +1,42 @@
+# Description:	Library for configuring and customizing font access
+# URL:		https://www.freedesktop.org/wiki/Software/fontconfig
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	freetype util-linux
+
+name=fontconfig
+version=2.15.0
+release=1
+source=(https://www.freedesktop.org/software/${name}/release/${name}-${version}.tar.xz \
+	fonts.conf)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--disable-docs \
+		--disable-nls \
+		--with-templatedir=/etc/fonts/conf.avail \
+		--with-default-fonts=/usr/share/fonts
+
+	make V=1
+
+	make -j1 DESTDIR=$PKG install
+
+	# Enabling autohinting by default
+	pushd $PKG/etc/fonts/conf.d
+	ln -sf /etc/fonts/conf.avail/10-autohint.conf
+	popd
+
+	# skel fonts.conf
+	install -D -m 0644 $SRC/fonts.conf \
+		$PKG/etc/skel/.config/fontconfig/fonts.conf
+
+	rm $PKG/etc/fonts/conf.d/README
+
+	find $PKG -type f -name '*.la' -delete
+}

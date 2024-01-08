@@ -1,0 +1,27 @@
+# Description:	Graph based image processing framework
+# URL:		https://gegl.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	babl gexiv2 json-glib librsvg poppler
+
+name=gegl
+version=0.4.46
+release=1
+source=(https://download.gimp.org/pub/${name}/${version%.*}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dintrospection=true \
+		-Dgraphviz=disabled \
+		-Dlibav=disabled \
+		-Dsdl2=disabled \
+		-Dvapigen=disabled \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	rm -r $PKG/usr/share/locale
+}
