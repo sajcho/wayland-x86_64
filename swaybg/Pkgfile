@@ -1,0 +1,19 @@
+# Description:	Wallpaper tool for Wayland compositors
+# URL:		https://github.com/swaywm/swaybg
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gdk-pixbuf libxkbcommon scdoc
+
+name=swaybg
+version=1.2.0
+release=1
+source=(https://github.com/swaywm/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

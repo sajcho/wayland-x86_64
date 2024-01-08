@@ -1,0 +1,7 @@
+untrusted comment: verify with wayland-x86_64.pub
+RWQLTWOc/NemaprmbbmME5LeHau5fDYDy1NLBK8juMNltZDPdtafUUE8a1UXmqaLr4nISOSd4Pkpgj6y+Puq63v86X60CIwORQ0=
+SHA256 (Pkgfile) = 9eb7755a66d0ae33cf7a3b059eb6a1b99807650cda79d8e0d32edc3bb6e4ed80
+SHA256 (.footprint) = df31aa733c3f4e6ad0a4b0752905ac239847f5d61c1a488b2e6ed926523a1b3b
+SHA256 (sway-1.8.1.tar.gz) = e9f575761342fc8fe0cfeea80c90f32ddfa8c543572fec179f40922346f47dff
+SHA256 (sway_6249.patch) = c32823efff2406c5cdd583310aa22a80020397df294231e509cf1b4dc6a45265
+SHA256 (sway.desktop) = 5003afd8fef8bbc9e988ca8713b0800fc194917c4581f3fa64b8c775ff2264cd

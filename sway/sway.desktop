@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Sway
+Name[en]=Sway
+Comment=This session logs you into Sway
+Exec=/usr/bin/sway
+TryExec=/usr/bin/sway
+Icon=
+Type=Application
+X-DesktopNames=Sway
+Keywords=launch;Sway;desktop;session;

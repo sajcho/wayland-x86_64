@@ -1,0 +1,21 @@
+# Description:	A typed linked list C header file only library
+# URL:		https://codeberg.org/dnkl/tllist
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=tllist
+version=1.1.0
+release=1
+source=(https://codeberg.org/dnkl/tllist/archive/${version}.tar.gz)
+renames=${name}-${version}.tar.gz
+
+build() {
+	cd ${name}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	rm -r $PKG/usr/share
+}

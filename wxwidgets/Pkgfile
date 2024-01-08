@@ -1,0 +1,43 @@
+# Description:	wxWidgets GUI library
+# URL:		https://www.wxwidgets.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libsecret libnotify
+
+name=wxwidgets
+_realname=wxWidgets
+version=3.2.2.1
+release=2
+source=(https://github.com/${_realname}/${_realname}/releases/download/v${version}/${_realname}-${version}.tar.bz2)
+
+build() {
+	cd ${_realname}-${version}
+
+	cd build
+
+	cmake .. -G Ninja \
+	-DCMAKE_BUILD_TYPE="None" \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	-DwxBUILD_TOOLKIT=gtk3 \
+	-DwxUSE_GLCANVAS_EGL=ON \
+	-DwxUSE_PRIVATE_FONTS=ON \
+	-DwxUSE_OPENGL=ON \
+	-DwxUSE_LIBJPEG=sys \
+	-DwxUSE_LIBLZMA=sys \
+	-DwxUSE_LIBPNG=sys \
+	-DwxUSE_LIBTIFF=sys \
+	-DwxUSE_REGEX=sys \
+	-DwxUSE_ZLIB=sys \
+	-DwxBUILD_PRECOMP=OFF \
+	-DwxBUILD_TESTS=OFF \
+	-DwxUSE_GLCANVAS_EGL=OFF \
+	-DwxUSE_GTKPRINT=OFF \
+	-DwxUSE_MEDIACTRL=OFF \
+	-DwxUSE_LIBMSPACK=OFF \
+	-DwxUSE_LIBSDL=OFF \
+	-DwxUSE_WEBVIEW=OFF \
+	-Wno-dev
+
+	ninja -v
+
+	DESTDIR=$PKG ninja install
+}
