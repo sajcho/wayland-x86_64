@@ -1,0 +1,25 @@
+# Description:	A keyboard handling library
+# URL:		https://www.xkbcommon.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libxcb libxml2 wayland-protocols xkeyboard-config
+
+name=libxkbcommon
+version=1.6.0
+release=1
+source=(https://github.com/xkbcommon/${name}/archive/xkbcommon-${version}.tar.gz)
+
+build() {
+	cd ${name}-xkbcommon-${version}
+
+	build-meson \
+		-Ddefault_library=both \
+		-Denable-wayland=true \
+		-Denable-x11=false \
+		-Denable-bash-completion=false \
+		-Denable-docs=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

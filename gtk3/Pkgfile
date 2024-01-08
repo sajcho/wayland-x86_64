@@ -1,0 +1,31 @@
+# Description:	The GTK+ Toolkit (v3)
+# URL:		https://www.gtk.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	at-spi2-core font-dejavu-ttf gdk-pixbuf libepoxy libxkbcommon pango
+
+name=gtk3
+version=3.24.39
+release=1
+source=(https://download.gnome.org/sources/gtk+/${version%.*}/gtk+-${version}.tar.xz)
+
+build() {
+	cd gtk+-${version}
+
+	build-meson \
+		-Dwayland_backend=true \
+		-Dx11_backend=false \
+		-Dexamples=false \
+		-Dgtk_doc=false \
+		-Dinstalled_tests=false \
+		-Dman=false \
+		-Dtests=false \
+		-Ddemos=false \
+		-Dcolord=no \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	rm -r $PKG/usr/share/{gtk-3.0,locale}
+}

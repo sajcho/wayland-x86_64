@@ -1,0 +1,24 @@
+# Description:	Userspace interface to kernel DRM services
+# URL:		https://dri.freedesktop.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	meson
+
+name=libdrm
+version=2.4.119
+release=1
+source=(https://dri.freedesktop.org/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dudev=true \
+		-Dman-pages=disabled \
+		-Dvalgrind=disabled \
+		-Dcairo-tests=disabled \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

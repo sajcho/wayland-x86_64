@@ -1,0 +1,25 @@
+# Description:	C++ wrappers for GTK+
+# URL:		https://www.gtkmm.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	atkmm gtk3 pangomm
+
+name=gtkmm3
+_realname=gtkmm
+version=3.24.7
+release=2
+source=(https://download.gnome.org/sources/${_realname}/${version%.*}/${_realname}-${version}.tar.xz)
+
+build() {
+	cd ${_realname}-${version}
+
+	build-meson \
+		-Dbuild-deprecated-api=true \
+		-Dbuild-x11-api=false \
+		-Dbuild-demos=false \
+		-Dbuild-tests=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

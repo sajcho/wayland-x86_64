@@ -1,0 +1,24 @@
+# Description:	X Authorization routines
+# URL:		http://xorg.freedesktop.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	xorgproto
+
+name=libxau
+_realname=libXau
+version=1.0.11
+release=1
+source=(https://www.x.org/releases/individual/lib/${_realname}-${version}.tar.xz)
+
+build() {
+	cd ${_realname}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-static
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
+}

@@ -1,0 +1,24 @@
+# Description:	Video Acceleration API to enable hardware accelerated video decode/encode.
+# URL:		https://01.org/linuxmedia/vaapi
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libdrm wayland-protocols
+
+name=libva
+version=2.20.0
+release=2
+source=(https://github.com/intel/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	CFLAGS+=" -DENABLE_VA_MESSAGING" \
+	build-meson \
+		-Dwith_wayland=yes \
+		-Dwith_x11=no \
+		-Dwith_glx=no \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

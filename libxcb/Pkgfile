@@ -1,0 +1,28 @@
+# Description:	X11 client-side library
+# URL:		http://xcb.freedesktop.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libinput libxau libxslt xcb-proto
+
+name=libxcb
+version=1.16
+release=1
+source=(https://www.x.org/releases/individual/lib/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	PYTHON=/usr/bin/python3 \
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix=/usr \
+		--disable-static
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+
+	find $PKG -type f -name '*.la' -delete
+}

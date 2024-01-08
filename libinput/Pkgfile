@@ -1,0 +1,26 @@
+# Description:	Library for handling input devices
+# URL:		https://www.freedesktop.org/wiki/Software/libinput
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	eudev libevdev mtdev
+
+name=libinput
+version=1.24.0
+release=1
+source=(https://gitlab.freedesktop.org/${name}/${name}/-/archive/${version}/${name}-${version}.tar.bz2)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Ddebug-gui=false \
+		-Ddocumentation=false \
+		-Dtests=false \
+		-Dlibwacom=false \
+		-Dudev-dir=/lib/udev \
+		-Dzshcompletiondir=no \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}

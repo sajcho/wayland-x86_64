@@ -1,0 +1,33 @@
+# Description:	GNU Image Manipulation Program - devel version
+# URL:		https://www.gimp.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	appstream-glib desktop-file-utils gegl glib-networking imagemagick libexif libgudev libmypaint mypaint-brushes poppler-data
+
+name=gimp-devel
+_realname=gimp
+version=2.99.16
+release=1
+source=(https://download.gimp.org/pub/gimp/v${version%.*}/${_realname}-${version}.tar.xz)
+
+build() {
+	cd ${_realname}-${version}
+
+	build-meson \
+		-Dprint=false \
+		-Djavascript=disabled \
+		-Dlua=disabled \
+		-Dalsa=disabled \
+		-Dappdata-test=disabled \
+		-Dcheck-update=no \
+		-Dbug-report-url="https://github.com/sajcho/" \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	rm -r $PKG/usr/share/{locale,metainfo}
+
+	find $PKG/usr/share -type f -name '*.desktop' \
+		-exec sed -r -e '/\[.+\]=/d' -e '/#/d' -i {} \;
+}

@@ -1,0 +1,19 @@
+# Description:	Grabs images from Wayland compositors
+# URL:		https://wayland.emersion.fr/grim/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libjpeg-turbo pixman scdoc wayland-protocols
+
+name=grim
+version=1.4.1
+release=1
+source=(https://git.sr.ht/~emersion/${name}/archive/v${version}.tar.gz)
+
+build() {
+	cd ${name}-v${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
