@@ -1,11 +1,11 @@
 # Description:	i3 compatible window manager for Wayland
 # URL:		https://swaywm.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	json-c pango swaybg wlroots
+# Depends on:	font-awesome-ttf fontconfig font-dejavu-ttf font-noto-ttf json-c pango swaybg wlroots
 
 name=sway
 version=1.8.1
-release=2
+release=3
 source=(https://github.com/swaywm/sway/archive/${version}/${name}-${version}.tar.gz \
 	sway_6249.patch \
 	sway.desktop)
