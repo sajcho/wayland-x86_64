@@ -5,7 +5,7 @@
 
 name=sway
 version=1.8.1
-release=3
+release=4
 source=(https://github.com/swaywm/sway/archive/${version}/${name}-${version}.tar.gz \
 	sway_6249.patch \
 	sway.desktop)
@@ -16,11 +16,11 @@ build() {
 	patch -p1 -i $SRC/sway_6249.patch
 
 	build-meson \
-		-Dtray=enabled \
-		-Dxwayland=disabled \
-		-Dman-pages=enabled \
 		-Dgdk-pixbuf=enabled \
-		-Dsd-bus-provider=libelogind \
+		-Dman-pages=enabled \
+		-Dsd-bus-provider=auto \
+		-Dtray=disabled \
+		-Dxwayland=disabled \
 		-Dbash-completions=false \
 		-Dfish-completions=false \
 		-Dzsh-completions=false \
