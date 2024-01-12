@@ -48,7 +48,6 @@ d:at-spi2-core
 d:cairo
 d:glib-networking
 d:xcb-util-cursor
-d:mako
 d:gsettings-desktop-schemas
 d:gdk-pixbuf
 d:libxcb
@@ -157,8 +156,8 @@ f:5e36e597768bc6b04a9b5b81e167851c:libdrm/.footprint
 f:ce5c19d7bb9b64217b2c3b441285332b:libdrm/.signature
 f:c0766acce0b339bfce4660251a46777b:libdrm/Pkgfile
 f:dd64318596cd12b40bd01d3739d4229a:swayidle/.footprint
-f:0860744d1c60eda162204d7618eae2a2:swayidle/.signature
-f:d4b5a9c1b550b1754ff945f6d0d95405:swayidle/Pkgfile
+f:83e0bfe9e949258d821bcf11e42d787c:swayidle/.signature
+f:037e13382c0602487183e381050a586e:swayidle/Pkgfile
 f:fc5fd2cb52971c954d8ff359e61d109b:gegl/.footprint
 f:f4d4d598c81a9832f14648fa8571062d:gegl/.signature
 f:f28e133d7e5f5bba371ff5de7f57c09b:gegl/Pkgfile
@@ -232,9 +231,9 @@ f:0aec944ee69a9e36fa09f94572637126:fontconfig/.footprint
 f:b580aa00bfcda8ab5467e016f40a6642:fontconfig/.signature
 f:190eb45e0a1e4c6b383a7b8a59e7517a:fontconfig/Pkgfile
 f:5de10d632120b09be9a1b467f20c983e:fontconfig/README
-f:5387edf542e186f22b52e9608a08dae8:at-spi2-core/.footprint
-f:3734b37afeb7bfe7c24693a4bd39c0a5:at-spi2-core/.signature
-f:3b287895d3ee5d74d0e858837cad22be:at-spi2-core/Pkgfile
+f:7ce1b272aa6fc59381f66e36f0c1b143:at-spi2-core/.footprint
+f:d945092fe2d585efd2d663b7fc554104:at-spi2-core/.signature
+f:2a09b736440230613b7fd8a17caf76d4:at-spi2-core/Pkgfile
 f:6cb02bfe23ea91d263bf924b5e89a922:cairo/.footprint
 f:03d84caec1ae9a95f6b3148525ccf155:cairo/.signature
 f:c25a087d136b182affeaccd483b606d8:cairo/Pkgfile
@@ -244,9 +243,6 @@ f:2a7959fbfe9804d7ea4a26d189d30a29:glib-networking/Pkgfile
 f:dc352ed298cdecdecb6409d766431302:xcb-util-cursor/.footprint
 f:311c5c215c57e89120f78c9ff384a9b4:xcb-util-cursor/.signature
 f:a89adf5e6b8308f87e7f5193bf84b91f:xcb-util-cursor/Pkgfile
-f:9c452d4cd9562fd5fdd0ab4ef3deefb0:mako/.footprint
-f:9ca98f6f11a84b726858936ee29a59dd:mako/.signature
-f:c8a4d559d67bcea1d24eee9ed258270b:mako/Pkgfile
 f:e5f74be27525658dae59401455944186:gsettings-desktop-schemas/post-install
 f:490fcdf4396e349c2a57d0560081101c:gsettings-desktop-schemas/.footprint
 f:8dd98166b8e20833f0e4d652204bcb12:gsettings-desktop-schemas/.signature
@@ -263,8 +259,8 @@ f:bf7748b233061e875c9f99c51a4509c2:gtk-layer-shell/.signature
 f:ac1cbf4b1efdf64732cd7538258eff2c:gtk-layer-shell/Pkgfile
 f:89110b96d106e7ff0f2eafbfc9526163:sway/sway_6249.patch
 f:f24cc0e90aa47f215eb812f6ee593905:sway/.footprint
-f:dab009d60b674d78bdc0217a0d9a2ff2:sway/.signature
-f:239b3d5fb4fafb16dd44b8ad495fb1fe:sway/Pkgfile
+f:b87c6d6d6937b46e4ee4f6d84f0642bd:sway/.signature
+f:b1bd21b3a1f6938e66a0ad54cdf867be:sway/Pkgfile
 f:fba363e359f3d102239b23158a8007a7:sway/sway.desktop
 f:f8b83e3c9a32a5be7279ee5d5ca89790:poppler/.footprint
 f:a2b2c5e644a1080e50d8c655f5b8b2a6:poppler/.signature
