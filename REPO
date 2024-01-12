@@ -18,7 +18,6 @@ d:xcb-util-renderutil
 d:swaykbdd
 d:filezilla
 d:xcb-util-image
-d:dbus
 d:libnotify
 d:wayland-protocols
 d:libdrm
@@ -75,7 +74,6 @@ d:tllist
 d:python3-gobject
 d:font-noto-ttf
 d:gexiv2
-d:elogind
 d:libva
 d:xcb-util
 d:xorgproto
@@ -149,13 +147,6 @@ f:ca8442a4f7f42b1b82ad34267f344431:filezilla/disable-xdg-open.patch
 f:8d50c453f0ec3e10770d223ee82beadb:xcb-util-image/.footprint
 f:392e4fdd691c59e5796482f085a74eae:xcb-util-image/.signature
 f:da1113d05bead212bb1ef21ddb4a0a20:xcb-util-image/Pkgfile
-f:9fa2fe9767a6bb2bd194fb558fc3e3e8:dbus/dbus.check
-f:bf567c5e6650b609d4dd8e48efb18864:dbus/dbus-enable-elogind.patch
-f:76c4a419ab5c93362976908ec968ef93:dbus/dbus-daemon-optional.patch
-f:48bcc8b687305094923ffd7792be54d4:dbus/.footprint
-f:8e44e6c1b1428476d5442d128d6d5266:dbus/.signature
-f:bd44c346a1073e841e495b4c25246c60:dbus/Pkgfile
-f:27f58277dc828be35913b54b04c985b0:dbus/dbus.run
 f:3a09e87aa9f3e487cf98edb75cde3d12:libnotify/.footprint
 f:15ad03f9e9e4d5990abf57feb8241f28:libnotify/.signature
 f:67b0238c36cbf8cd70e3122d65fbc5d8:libnotify/Pkgfile
@@ -342,13 +333,6 @@ f:40140abe7b7ca13d813c686b5fbe8e73:font-noto-ttf/Pkgfile
 f:f917c011bc3e1f65f7986adf78298992:gexiv2/.footprint
 f:40758f41b60d5a09b6a2bb1e3fb4d515:gexiv2/.signature
 f:65b0dc5c40da8253d4d104f8a2782fa5:gexiv2/Pkgfile
-f:046932ddd1b42a381679729bda909139:elogind/elogind.run
-f:fd7037fcaaafe4959a53cccd12a193d6:elogind/elogind.wrapper
-f:207793309471c0309334e0da3c1e2eeb:elogind/.footprint
-f:f45304d1e21a41eb25852a5d4d86a4ac:elogind/.signature
-f:f7275d14f83737483cf02208866b3582:elogind/elogind-user
-f:86367b723f439c661103535cbbe0ff3c:elogind/Pkgfile
-f:10fa6e9c2df0a71cf956550d1a84d333:elogind/README
 f:076430881a9deda03f3644f71d730112:libva/.footprint
 f:9c156cadedb24f76b3f7a234115f2bbb:libva/.signature
 f:34e664067473861444c7335470cc380a:libva/Pkgfile
