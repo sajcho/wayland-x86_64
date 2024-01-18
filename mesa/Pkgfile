@@ -1,19 +1,16 @@
-# Description:	Mesa DRI OpenGL library
+# Description:	Mesa DRI OpenGL library - release
 # URL:		http://www.mesa3d.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	elfutils libdrm llvm-toolchain python3-mako wayland-protocols
 
 name=mesa
-version=24.0.0-devel
-_commit=a84729d36866bc79619523065a6038c3d8444f97
-# Author: Marek Olšák <maraeo@gmail.com>
-# Date:   Sat Jan 6 15:22:57 2024 -0500
+version=23.3.3
 release=1
-source=(https://gitlab.freedesktop.org/mesa/mesa/-/archive/${_commit}/${name}-${_commit}.tar.gz \
+source=(https://archive.mesa3d.org/${name}-${version}.tar.xz \
 	no-unlink-megadrivers.patch)
 
 build() {
-	cd ${name}-${_commit}
+	cd ${name}-${version}
 
 	# from alpine linux:
 	# this converts megadriver installation to use symlinks instead of hardlinks,
@@ -23,8 +20,8 @@ build() {
 
 	build-meson \
 		-Dplatforms=wayland \
-		-Dgallium-drivers=r300,r600,radeonsi,swrast,nouveau \
-		-Dvideo-codecs=av1dec,av1enc,vp9dec,h264dec,h264enc,h265dec,h265enc \
+		-Dgallium-drivers=r300,r600,radeonsi,swrast,nouveau,panfrost \
+		-Dvideo-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
 		-Dvulkan-drivers="" \
 		-Dglx=disabled \
 		-Dlibunwind=disabled \
@@ -32,6 +29,9 @@ build() {
 		-Dvalgrind=disabled \
 		-Dbuild-tests=false \
 		. build
+
+	# generic git_sha1.h
+	/usr/bin/python3 bin/git_sha1_gen.py --output build/src/git_sha1.h
 
 	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
