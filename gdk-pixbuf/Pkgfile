@@ -1,7 +1,7 @@
 # Description:	GTK+ image loading library
 # URL:		https://wiki.gnome.org/Projects/GdkPixbuf
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gobject-introspection shared-mime-info libjpeg-turbo libpng tiff
+# Depends on:	gobject-introspection shared-mime-info libpng tiff
 
 name=gdk-pixbuf
 version=2.42.10
