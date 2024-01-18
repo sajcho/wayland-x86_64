@@ -1,7 +1,7 @@
 # Description:	X keyboard configuration database
 # URL:		https://cgit.freedesktop.org/xkeyboard-config/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gettext meson perl libxslt
+# Depends on:	gettext meson libxslt
 
 name=xkeyboard-config
 version=2.40
