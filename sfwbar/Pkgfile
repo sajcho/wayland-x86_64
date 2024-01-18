@@ -1,7 +1,7 @@
 # Description:	Sway Floating Window Bar
 # URL:		https://github.com/LBCrion/sfwbar
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gtk3 gtk-layer-shell json-c pulseaudio
+# Depends on:	gtk-layer-shell json-c pulseaudio
 
 name=sfwbar
 version=1.0_beta14
