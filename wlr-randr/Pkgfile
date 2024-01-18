@@ -1,0 +1,20 @@
+# Description:	Utility to manage outputs of a Wayland compositor
+# URL:		https://sr.ht/~emersion/wlr-randr/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	wayland
+
+name=wlr-randr
+version=0.3.1
+release=1
+source=(https://git.sr.ht/~emersion/wlr-randr/archive/v${version}.tar.gz)
+renames=${name}-v${version}.tar.gz
+
+build() {
+	cd ${name}-v${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
