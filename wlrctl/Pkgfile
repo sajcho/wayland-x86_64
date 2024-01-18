@@ -1,0 +1,22 @@
+# Description:	Utility for miscellaneous wlroots extensions
+# URL:		https://git.sr.ht/~brocellous/wlrctl
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libxkbcommon scdoc
+
+name=wlrctl
+version=0.2.2
+release=1
+source=(https://git.sr.ht/~brocellous/wlrctl/archive/v${version}.tar.gz)
+renames=${name}-v${version}.tar.gz
+
+build() {
+	cd ${name}-v${version}
+
+	build-meson \
+		-Dzsh-completions=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
