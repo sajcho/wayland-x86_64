@@ -1,7 +1,7 @@
 # Description:	Screen recording for wlroots-based compositors
 # URL:		https://github.com/ammen99/wf-recorder
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	ffmpeg mesa pulseaudio slurp scdoc wayland-protocols x264 x265
+# Depends on:	ffmpeg mesa slurp
 
 name=wf-recorder
 version=0.4.1
