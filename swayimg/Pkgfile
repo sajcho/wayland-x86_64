@@ -1,0 +1,19 @@
+# Description:	Image viewer for Sway
+# URL:		https://github.com/artemsen/swayimg
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	librsvg scdoc
+
+name=swayimg
+version=2.0
+release=1
+source=(https://github.com/artemsen/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
