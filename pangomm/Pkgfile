@@ -1,19 +1,21 @@
 # Description:	C++ bindings for pango
 # URL:		https://www.gtkmm.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	pango glibmm cairomm14
+# Depends on:	cairomm glibmm pango
 
 name=pangomm
 version=2.46.3
 release=1
-source=(https://download.gnome.org/sources/${name}/${version%.*}/${name}-${version}.tar.xz)
+source=(https://download.gnome.org/sources/pangomm/${version%.*}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	build-meson . build
+	build-meson \
+		-Dbuild-documentation=false \
+		. build
 
-	meson compile ${JOBS:+-j ${JOBS}} -C build
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
 }
