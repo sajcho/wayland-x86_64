@@ -1,0 +1,24 @@
+# Description:	C++ bindings to Cairo vector graphics library
+# URL:		https://www.cairographics.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	cairo libsigc++3
+
+name=cairomm1.16
+_realname=cairomm
+version=1.16.2
+release=1
+source=(https://www.cairographics.org/releases/${_realname}-${version}.tar.xz)
+
+build() {
+	cd ${_realname}-${version}
+
+	build-meson \
+		-Dboost-shared=true \
+		-Dbuild-examples=false \
+		-Dbuild-tests=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
