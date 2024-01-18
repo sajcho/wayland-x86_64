@@ -4,8 +4,8 @@
 # Depends on:	meson
 
 name=libdrm
-version=2.4.119
-release=2
+version=2.4.120
+release=1
 source=(https://dri.freedesktop.org/${name}/${name}-${version}.tar.xz)
 
 build() {
