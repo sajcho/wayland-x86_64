@@ -1,0 +1,24 @@
+# Description:	Screen locker for Wayland
+# URL:		https://github.com/swaywm/swaylock
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	cairo gdk-pixbuf libxkbcommon scdoc wayland-protocols
+
+name=swaylock
+version=1.7.2
+release=1
+source=(https://github.com/swaywm/swaylock/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dpam=enabled \
+		-Dbash-completions=false \
+		-Dfish-completions=false \
+		-Dzsh-completions=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
