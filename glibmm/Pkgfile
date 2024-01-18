@@ -6,13 +6,14 @@
 name=glibmm
 version=2.66.6
 release=1
-source=(https://download.gnome.org/sources/${name}/${version%.*}/${name}-${version}.tar.xz)
+source=(https://download.gnome.org/sources/glibmm/${version%.*}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
 	build-meson \
 		-Dbuild-documentation=false \
+		-Dbuild-examples=false \
 		. build
 
 	meson compile ${JOBS:+-j ${JOBS}} -v -C build
