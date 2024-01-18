@@ -2,8 +2,8 @@
 Name=Sway
 Name[en]=Sway
 Comment=This session logs you into Sway
-Exec=/usr/bin/sway
-TryExec=/usr/bin/sway
+Exec=/usr/bin/startw
+TryExec=/usr/bin/startw
 Icon=
 Type=Application
 X-DesktopNames=Sway

@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	etc/sway/
 -rw-r--r--	root/root	etc/sway/config
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/startw
 -rwxr-xr-x	root/root	usr/bin/sway
 -rwxr-xr-x	root/root	usr/bin/swaybar
 -rwxr-xr-x	root/root	usr/bin/swaymsg
