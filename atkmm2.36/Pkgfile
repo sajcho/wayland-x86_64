@@ -1,0 +1,22 @@
+# Description:	C++ bindings for atk
+# URL:		https://www.gtkmm.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	at-spi2-core glibmm2.68
+
+name=atkmm2.36
+_realname=atkmm
+version=2.36.2
+release=1
+source=(https://download.gnome.org/sources/atkmm/${version%.*}/${_realname}-${version}.tar.xz)
+
+build() {
+	cd ${_realname}-${version}
+
+	build-meson \
+		-Dbuild-documentation=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
