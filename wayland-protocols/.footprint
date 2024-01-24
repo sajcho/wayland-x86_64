@@ -4,6 +4,8 @@ drwxr-xr-x	root/root	usr/share/pkgconfig/
 -rw-r--r--	root/root	usr/share/pkgconfig/wayland-protocols.pc
 drwxr-xr-x	root/root	usr/share/wayland-protocols/
 drwxr-xr-x	root/root	usr/share/wayland-protocols/stable/
+drwxr-xr-x	root/root	usr/share/wayland-protocols/stable/linux-dmabuf/
+-rw-r--r--	root/root	usr/share/wayland-protocols/stable/linux-dmabuf/linux-dmabuf-v1.xml
 drwxr-xr-x	root/root	usr/share/wayland-protocols/stable/presentation-time/
 -rw-r--r--	root/root	usr/share/wayland-protocols/stable/presentation-time/presentation-time.xml
 drwxr-xr-x	root/root	usr/share/wayland-protocols/stable/viewporter/
@@ -23,6 +25,8 @@ drwxr-xr-x	root/root	usr/share/wayland-protocols/staging/ext-idle-notify/
 -rw-r--r--	root/root	usr/share/wayland-protocols/staging/ext-idle-notify/ext-idle-notify-v1.xml
 drwxr-xr-x	root/root	usr/share/wayland-protocols/staging/ext-session-lock/
 -rw-r--r--	root/root	usr/share/wayland-protocols/staging/ext-session-lock/ext-session-lock-v1.xml
+drwxr-xr-x	root/root	usr/share/wayland-protocols/staging/ext-transient-seat/
+-rw-r--r--	root/root	usr/share/wayland-protocols/staging/ext-transient-seat/ext-transient-seat-v1.xml
 drwxr-xr-x	root/root	usr/share/wayland-protocols/staging/fractional-scale/
 -rw-r--r--	root/root	usr/share/wayland-protocols/staging/fractional-scale/fractional-scale-v1.xml
 drwxr-xr-x	root/root	usr/share/wayland-protocols/staging/security-context/
