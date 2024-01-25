@@ -46,6 +46,7 @@ d:autoconf-2.13
 d:libevdev
 d:xcb-util-errors
 d:cairomm1.16
+d:babl
 d:wlr-randr
 d:wayland-utils
 d:fontconfig
@@ -244,6 +245,9 @@ f:6304c9c985561038491a24a69b823c20:xcb-util-errors/Pkgfile
 f:6d315d94dc653bd36d63e99dc9bfdd7a:cairomm1.16/.footprint
 f:10ed41b0cb93aba15dd4b5056e62b4a2:cairomm1.16/.signature
 f:21dc3d4625b2fa356c0022aaa44db61f:cairomm1.16/Pkgfile
+f:79c1c055d829bf6e4c091206046c42d7:babl/.footprint
+f:db02b0f27debb2a172c7f8466862b6e8:babl/.signature
+f:6cdc24fecc99592f883f5a3ffc8a4f3a:babl/Pkgfile
 f:8d8bc5f56336cab354a7c1a4133168e5:wlr-randr/.footprint
 f:9d410a1a1a60da4713b66e6f95758f75:wlr-randr/.signature
 f:f9e368ec689f5257b8b7939f13ea2ff4:wlr-randr/Pkgfile
