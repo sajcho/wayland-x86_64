@@ -169,8 +169,8 @@ f:4f88955aa2d2bad1bd981071d8fe49a3:wl-clipboard/.footprint
 f:04c1c6bfad876ee6b38dac7c840b4cc7:wl-clipboard/.signature
 f:15992ee4570bfacd1389a869457b5b83:wl-clipboard/Pkgfile
 f:90bb032fa8cc6664e3f000283df8189b:swaylock/.footprint
-f:78bf18fcc472384785e8213237280e89:swaylock/.signature
-f:59668e4a3cfd1af985eb6256f64cc9fd:swaylock/Pkgfile
+f:dcd296329993fb9e6116ce347c789e57:swaylock/.signature
+f:b305f80452315b391ee23b35ff085fa7:swaylock/Pkgfile
 f:dd64318596cd12b40bd01d3739d4229a:swayidle/.footprint
 f:83e0bfe9e949258d821bcf11e42d787c:swayidle/.signature
 f:037e13382c0602487183e381050a586e:swayidle/Pkgfile
