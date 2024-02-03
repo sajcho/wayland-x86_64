@@ -1,10 +1,10 @@
 # Description:	Mesa DRI OpenGL library - release
 # URL:		http://www.mesa3d.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	elfutils libdrm llvm-toolchain python3-mako wayland-protocols
+# Depends on:	elfutils libdrm llvm-toolchain lm-sensors python3-mako wayland-protocols
 
 name=mesa
-version=23.3.3
+version=24.0.0
 release=1
 source=(https://archive.mesa3d.org/${name}-${version}.tar.xz \
 	no-unlink-megadrivers.patch)
@@ -21,17 +21,14 @@ build() {
 	build-meson \
 		-Dplatforms=wayland \
 		-Dgallium-drivers=r300,r600,radeonsi,swrast,nouveau,panfrost \
-		-Dvideo-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
+		-Dvideo-codecs=av1dec,av1enc,h264dec,h264enc,h265dec,h265enc,vc1dec,vp9dec \
 		-Dvulkan-drivers="" \
+		-Dlmsensors=enabled \
 		-Dglx=disabled \
 		-Dlibunwind=disabled \
-		-Dlmsensors=disabled \
 		-Dvalgrind=disabled \
 		-Dbuild-tests=false \
 		. build
-
-	# generic git_sha1.h
-	/usr/bin/python3 bin/git_sha1_gen.py --output build/src/git_sha1.h
 
 	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
