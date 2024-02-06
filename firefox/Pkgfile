@@ -4,7 +4,7 @@
 # Depends on:	autoconf-2.13 cbindgen ffmpeg libidl libnotify nodejs nss zip
 
 name=firefox
-version=122.0
+version=122.0.1
 release=1
 source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-${version}.source.tar.xz \
 	icu74.patch \
