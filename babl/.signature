@@ -1,5 +1,5 @@
-untrusted comment: verify with opt-x86_64.pub
-RWRkiJhlUJEGrIXLnpoUEnvrOjyzXwJT6lDxDby0x8lo06NWX+W6xWVPuVW73yK0PI1xQljb4e5LFO6vV/agyeumWEnQsraRLQ4=
-SHA256 (Pkgfile) = 5a5e192f131cdbb8728886f1ecb225bfa3e467b1f03c54e2c5758187852209a4
-SHA256 (.footprint) = fc8a41af2f68d6890d327faf0c96e61e715b266918dc66de89a8d1273316a418
-SHA256 (babl-0.1.106.tar.xz) = d325135d3304f088c134cc620013acf035de2e5d125a50a2d91054e7377c415f
+untrusted comment: verify with wayland-x86_64.pub
+RWQLTWOc/NemapWbn5xap+jcQY5dFLv+ySAlKo7M5tZNNGPT3I0ePNod1UZ1j2yhduS9hRgVRBFo2nUa3CZWB8Db2Q7Tjh8Z4gM=
+SHA256 (Pkgfile) = b1c7971d9081f36559bd76193f3f3f620ff97ff6c89825e941b35894ccda66f2
+SHA256 (.footprint) = 63094190f66e6d747c8e393b26c48bb765125cca3574bd7ed08be9b7700c4a90
+SHA256 (babl-0.1.108.tar.xz) = 26defe9deaab7ac4d0e076cab49c2a0d6ebd0df0c31fd209925a5f07edee1475
