@@ -4,7 +4,7 @@
 # Depends on:	gettext meson libxslt
 
 name=xkeyboard-config
-version=2.40
+version=2.41
 release=1
 source=(https://www.x.org/releases/individual/data/${name}/${name}-${version}.tar.xz \
 	locale.tar.xz)
