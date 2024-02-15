@@ -5,8 +5,9 @@
 
 name=wofi
 version=1.4.1
-release=1
+release=2
 source=(https://hg.sr.ht/~scoopta/wofi/archive/v$version.tar.gz)
+renames=${name}-${version}.tar.gz
 
 build() {
 	cd ${name}-v${version}
