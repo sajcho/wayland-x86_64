@@ -16,4 +16,4 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/cairo/__pycache__/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/cairo/include/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/cairo/include/py3cairo.h
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/cairo/py.typed (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pycairo-1.25.1.egg-info
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pycairo-1.26.0.egg-info
