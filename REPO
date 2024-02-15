@@ -304,8 +304,8 @@ f:17fae8d0c1b34bf640858462f7f939a6:gimp-devel/.footprint
 f:b391289a33d6c715df88a5e2abd378e7:gimp-devel/.signature
 f:ef5c81d965d95b14bc9ed85deb5dfaf8:gimp-devel/Pkgfile
 f:4554c2c0ae99aafcd97d786a7ecf338c:wofi/.footprint
-f:dfb7c360b0601784c7e4be7a25d030f9:wofi/.signature
-f:171c36f9f21a07bffba69627e28b69d8:wofi/Pkgfile
+f:27a3d85291ceff5309e759b047e2f3a0:wofi/.signature
+f:c465beb05d619441c890240d4e4645b7:wofi/Pkgfile
 f:a4a5ad26ec5510a8d4045605b6f892b1:wlroots/.footprint
 f:ff4ce6c1298c6645aa489fffe8fa8a18:wlroots/.signature
 f:047c2bf640c7ab4d5e13d091be166e73:wlroots/Pkgfile
