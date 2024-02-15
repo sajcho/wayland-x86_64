@@ -4,7 +4,7 @@
 # Depends on:	babl gexiv2 json-glib librsvg poppler
 
 name=gegl
-version=0.4.46
+version=0.4.48
 release=1
 source=(https://download.gimp.org/pub/${name}/${version%.*}/${name}-${version}.tar.xz)
 
