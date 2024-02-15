@@ -121,8 +121,8 @@ f:5ec3f54f7d034ae7132e9705098520eb:slurp/.signature
 f:70a4748db8696c1b1ce868c76f3ccc13:slurp/Pkgfile
 f:480cf0d5e71edac10f396745f3f9b7b6:xkeyboard-config/locale.tar.xz
 f:34d2d6d992d7874d3b76521d0d6dd61d:xkeyboard-config/.footprint
-f:35ca6c4d59c22be8036ce100e8df6880:xkeyboard-config/.signature
-f:378e557113efff9bb10c4fadefab1f29:xkeyboard-config/Pkgfile
+f:a15eee78d08eb939daad9efe2994e4ff:xkeyboard-config/.signature
+f:770fb1e4a251fcb45c34ba4fcb1e75e8:xkeyboard-config/Pkgfile
 f:69e07b8b7baaa37b34802b5d11a6f0f8:desktop-file-utils/post-install
 f:d3512ed058cc2237156fb5ac8c01978d:desktop-file-utils/.footprint
 f:98934ddc954d5d36b38e5d1a4ea10e85:desktop-file-utils/.signature
@@ -175,9 +175,9 @@ f:b305f80452315b391ee23b35ff085fa7:swaylock/Pkgfile
 f:dd64318596cd12b40bd01d3739d4229a:swayidle/.footprint
 f:83e0bfe9e949258d821bcf11e42d787c:swayidle/.signature
 f:037e13382c0602487183e381050a586e:swayidle/Pkgfile
-f:fc5fd2cb52971c954d8ff359e61d109b:gegl/.footprint
-f:f4d4d598c81a9832f14648fa8571062d:gegl/.signature
-f:f28e133d7e5f5bba371ff5de7f57c09b:gegl/Pkgfile
+f:f41ae6f010653211f369412d090f5ff8:gegl/.footprint
+f:40963d23627bf9a86b0aa38c517c3e80:gegl/.signature
+f:8475fc16a1f97d507eebab3ed3ea6288:gegl/Pkgfile
 f:b44c272fc566625029e31cba34a43f7b:swaylockd/.footprint
 f:91f26945f69c3463367f00014d1a4c88:swaylockd/.signature
 f:16410058dbd89ec0a6fc0c2e276be67f:swaylockd/Pkgfile
@@ -304,8 +304,8 @@ f:17fae8d0c1b34bf640858462f7f939a6:gimp-devel/.footprint
 f:b391289a33d6c715df88a5e2abd378e7:gimp-devel/.signature
 f:ef5c81d965d95b14bc9ed85deb5dfaf8:gimp-devel/Pkgfile
 f:4554c2c0ae99aafcd97d786a7ecf338c:wofi/.footprint
-f:996e4962d03797b74919705cf68cdff7:wofi/.signature
-f:fb5141ff9275de293f04460fc5efcdb2:wofi/Pkgfile
+f:dfb7c360b0601784c7e4be7a25d030f9:wofi/.signature
+f:171c36f9f21a07bffba69627e28b69d8:wofi/Pkgfile
 f:a4a5ad26ec5510a8d4045605b6f892b1:wlroots/.footprint
 f:ff4ce6c1298c6645aa489fffe8fa8a18:wlroots/.signature
 f:047c2bf640c7ab4d5e13d091be166e73:wlroots/Pkgfile
