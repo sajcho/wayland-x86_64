@@ -1,6 +1,6 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/Nemaluks5ny0upX9WeaPBmUOtIftggMVg+KJtQ0PG9I8qwUNBqP7SMk3Ugy8YApgtbLCMDV1YMehV+3Tv+Rkzj7FQw=
-SHA256 (Pkgfile) = b33e7098b27b8c279070bc3860d869f5a212582599a64fdd6b6d4ca0ef3f8761
+RWQLTWOc/NemapOKUF9gRLcNbf1ckjm8JHzsH5iHKAXOp1d0HrAwJ2Fr/YFL3uTjoKfnN2KrnEVWsy9uWWD3y1a2eiQQgZvMvwY=
+SHA256 (Pkgfile) = c652756c18b3cb0e9a9a84fbb7d01a967f409fd6d66ae43d7d61a8f08744fad8
 SHA256 (.footprint) = 19fe18efc1a5670feea746d8cbf46ce90be58202f4dc6a0775a389ccd050223a
-SHA256 (mesa-24.0.0.tar.xz) = dc7e8c077bc5884df95478263b34bdebb7e88e600689cb56fb07be2b8c304c36
+SHA256 (mesa-24.0.1.tar.xz) = f387192b08c471c545590dd12230a2a343244804b5fe866fec6aea02eab57613
 SHA256 (no-unlink-megadrivers.patch) = 2eac5a17bda598d13d570592c1fb2b5b80eb2e1cd6f01ef04f1a6d7ac9457f0b
