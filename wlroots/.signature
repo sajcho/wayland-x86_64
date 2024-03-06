@@ -1,5 +1,5 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/NemamMA6QjyrWQZu5G56qGMt8av2DHPQe1LUmlZ7iPDxqsnTPSNDKBzus6pshtoegSt8M+YYF+gW1OmI+So5AeLVAM=
-SHA256 (Pkgfile) = 3d21dd613888e8a8ad7b4d8941fe1473399d696dd7ebb03b06bc82821be49819
-SHA256 (.footprint) = bb713fbed7adf9976fc63e70039d5bede144a62dcc27f46f1bad3a052a2b2bab
-SHA256 (wlroots-0.16.2.tar.gz) = f502959db8bc029e32f10a837b37257bb8c5ed269bceddf9492f0bb381bebf76
+RWQLTWOc/NemasoPfhiVgGK/IuxO1kzTvmD2J0Etzv2XzXKo1F9mxretYG4xKroxXho6FE/pTabSri+yjiGBA0AysYs0uGfBwgM=
+SHA256 (Pkgfile) = 7056e6ee6ceb393a7ea7be08e834e96d124b84c12c1b9d551e4d605133e806f1
+SHA256 (.footprint) = 99026b785e8c2020aa3d82a708d472ed97e97253ba66234a69019b6ac8cec1e2
+SHA256 (wlroots-0.17.1.tar.gz) = b4b1b08daf0728cd2648fb57660493e5b3eafe4fcc081c138de864895181cdfe
