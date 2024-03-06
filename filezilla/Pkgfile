@@ -5,19 +5,16 @@
 
 name=filezilla
 _realname=FileZilla
-version=3.65.0
-release=2
+version=3.66.5
+release=1
 source=(https://download.filezilla-project.org/client/${_realname}_${version}_src.tar.xz \
-	disable-xdg-open.patch \
-	wxwidgets-3.2.patch)
+	filezilla-3.66.5-disable-xdg-open.patch)
 
 build() {
 	cd ${name}-${version}
 
 	# disable xdg-open: requires additional ports - useless?!
-	patch -p1 -i $SRC/disable-xdg-open.patch
-
-	patch -p1 -i $SRC/wxwidgets-3.2.patch
+	patch -p1 -i $SRC/${name}-${version}-disable-xdg-open.patch
 
 	NOCONFIGURE=1 autoreconf -fiv
 

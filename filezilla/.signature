@@ -1,7 +1,6 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/Nemah3zcULjhdXMWtEiKtbchtURvRvmNuuxGnYlTQel/ShglR3F+VNT788iG+w2kmLOl704YtuMUklDwpUKEZbfJgI=
-SHA256 (Pkgfile) = 0ce09db064b36bde3be3ddd90d57f4e4197bcbbae42acb4f81b7970974cc6263
-SHA256 (.footprint) = 5cf93cdbd75758f68026b0fb735f409b1680e0db5c6dfe45a077b968781ad291
-SHA256 (FileZilla_3.65.0_src.tar.xz) = d2bce4dbaa80fe035836db19441e90befcbabdef5556e9a4b3d4dd233638bdea
-SHA256 (disable-xdg-open.patch) = e03551cbbcaf66d9b113eab3ebff957c23357a3ba8b5449b74e0513d94261622
-SHA256 (wxwidgets-3.2.patch) = 1420610ad579cdf8a2864c2ab1ce784f43192bc28d0a7af7fee985593ffe51ef
+RWQLTWOc/Nemai84p8sfzZd4dfdGjCM+9osBtUYQLiED7MJbbwQAWLvdUcGEwI0wfhX2LsQ5BVTCho3lJsAewosGQi4XYp7F1wY=
+SHA256 (Pkgfile) = 745b5a36204eba991d5ea171a870cbbc2b0dba2b8397e12eb041b64b5a5aa7a9
+SHA256 (.footprint) = 03b86703f7f9b3e9f881fe923cc9a2588f02d2969b828802b642541c113c5409
+SHA256 (FileZilla_3.66.5_src.tar.xz) = 92122819bae6341070ba4b6ecb457e6730b46e7dc89942990903f298903d1b3b
+SHA256 (filezilla-3.66.5-disable-xdg-open.patch) = 6ad2d4549f01722859bb9fe866b9a6df9921f502631c60579e3a08f6f8fd7c46
