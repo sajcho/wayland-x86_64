@@ -1,5 +1,5 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/Nemak5l+S848ANLRTkZareX99Zzp/JCfzq6MMPDnVBPcK3U+dIwEy0lL0FTFccE6nageA4t/kFe8wkXmthY9UJYAA4=
-SHA256 (Pkgfile) = 39f27c381d37b982cfb2e1f212467f88f526a35a2d5b1f63c360ca744616442c
+RWQLTWOc/NemauSdh1iY/ztlaHv/Tt6ad7gCkkfxKi2/56FE6z+7as57aQ6e4kRqEdyAmilbOMhWjUUYVvOzHaw090HehZpl3gg=
+SHA256 (Pkgfile) = 6a51f1c5504a15202924d771a214dec942a1c0f71ef10a265a66cbb8bdedb823
 SHA256 (.footprint) = 9bded81cc625ebd64e92a6003914d7e1281a2eb8d1349dd92aa1d549adfd2366
-SHA256 (glib-networking-2.78.0.tar.xz) = 52fe4ce93f7dc51334b102894599858d23c8a65ac4a1110b30920565d68d3aba
+SHA256 (glib-networking-2.78.1.tar.xz) = e48f2ddbb049832cbb09230529c5e45daca9f0df0eda325f832f7379859bf09f
