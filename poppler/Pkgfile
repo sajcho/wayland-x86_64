@@ -4,7 +4,7 @@
 # Depends on:	boost cairo gobject-introspection lcms2
 
 name=poppler
-version=24.02.0
+version=24.03.0
 release=1
 source=(https://poppler.freedesktop.org/${name}-${version}.tar.xz)
 
