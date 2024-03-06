@@ -4,8 +4,8 @@
 # Depends on:	font-awesome-ttf font-dejavu-ttf font-noto-ttf json-c pango swaybg wlroots
 
 name=sway
-version=1.8.1
-release=5
+version=1.9
+release=1
 source=(https://github.com/swaywm/sway/archive/${version}/${name}-${version}.tar.gz \
 	sway.desktop \
 	startw)
