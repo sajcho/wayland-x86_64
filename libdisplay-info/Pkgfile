@@ -1,0 +1,19 @@
+# Description:	EDID and DisplayID library
+# URL:		https://gitlab.freedesktop.org/emersion/libdisplay-info
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	hwdata meson
+
+name=libdisplay-info
+version=0.1.1
+release=1
+source=(https://gitlab.freedesktop.org/emersion/libdisplay-info/-/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
