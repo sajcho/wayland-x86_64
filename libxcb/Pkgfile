@@ -4,7 +4,7 @@
 # Depends on:	libinput libxau libxslt xcb-proto
 
 name=libxcb
-version=1.16
+version=1.16.1
 release=1
 source=(https://www.x.org/releases/individual/lib/${name}-${version}.tar.xz)
 
