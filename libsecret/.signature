@@ -1,5 +1,5 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/NemaiZhyF8n5kX9luIZTeHxr/yhc+LcatUcev07P46pTJSlFnhlO4gavoNiyOZxcV3Jvc2Epa5n+4VglTluaAqsZAM=
-SHA256 (Pkgfile) = 9ba3716a1bff5eb4963060d12d7d943d52336573d9c80cc93468814ad90e2f02
+RWQLTWOc/NemaiGieuniSpOxZ0ftj0oNhcWx/EP8u8mTO0Oh5qPSs7uQXan8LMuJcwBsdkdPxeXJrk7b8lq91iJo8NL8ES2VYwE=
+SHA256 (Pkgfile) = db4061a626f0045de103e8450ccaeb49038382648c85a9cf9c47a6823fa2fdf0
 SHA256 (.footprint) = 992be0c263bea1b77cd025873e7e5a2bd1b27a2f0357371742b7f67f1dcf14cc
-SHA256 (libsecret-0.21.3.tar.xz) = 9a3e2571f1048035d80238f52c8760125884a43baf8a580fedb7250c1ad0a9e7
+SHA256 (libsecret-0.21.4.tar.xz) = 163d08d783be6d4ab9a979ceb5a4fecbc1d9660d3c34168c581301cd53912b20
