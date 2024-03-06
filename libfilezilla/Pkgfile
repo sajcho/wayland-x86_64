@@ -4,8 +4,8 @@
 # Depends on:	gettext gnutls
 
 name=libfilezilla
-version=0.44.0
-release=2
+version=0.46.0
+release=1
 source=(https://download.filezilla-project.org/${name}/${name}-${version}.tar.xz)
 
 build() {
