@@ -1,0 +1,5 @@
+untrusted comment: verify with wayland-x86_64.pub
+RWQLTWOc/Neman2NR/5FIwwPyDrgBVOI/hyI0kMABDRByAca6Y5gii0SBGycos53CDQ8Bg8BJ4Y1+oQcoxtTI9WwjLi00ECjDwY=
+SHA256 (Pkgfile) = 76398b5408fd6c55e70d06b2ef240697d726cf76fc76a80d9c23a6d814c575b9
+SHA256 (libliftoff-v0.4.1.tar.gz) = 44ec5cfdd0df040d1023d4d6a48b23c31f21ce61ee2347da9e1ca244fe24dd1c
+SHA256 (no-werror.patch) = c4078ee7637ff11778e25eb24b7530b3192a888128d77c95ab1dcc71367bbfa9
