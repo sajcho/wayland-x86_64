@@ -1,0 +1,27 @@
+# Description:	Wayland stacking compositor
+# URL:		https://github.com/labwc/labwc
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	cairo glib libinput librsvg libxml2 meson pango scdoc wayland-protocols wlroots
+
+name=labwc
+version=0.7.1
+_commit=4fc6bce3ea9f6d08b6efd6c022bea5030e543c06
+# Author: Johan Malm <jgm323@gmail.com>
+# Date:   Sun Mar 24 19:31:29 2024 +0000
+release=1
+source=(https://github.com/labwc/labwc/archive/${_commit}/${name}-${_commit}.tar.gz)
+
+build() {
+	cd ${name}-${_commit}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	cp -r $PKG/usr/share/doc/labwc \
+		$PKG/usr/share/
+
+	rm -r $PKG/usr/share/{doc,labwc/README,locale}
+}
