@@ -1,0 +1,38 @@
+# Description:	yambar is a lightweight and configurable status panel (bar, for short) for X11 and Wayland
+# URL:		https://codeberg.org/dnkl/yambar/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	pulseaudio scdoc
+
+name=yambar
+version=1.10.0-37-g4e07b63
+_commit=4e07b63cefdaa8b623ce7920e317ed8717d7c089
+# Author: Daniel Eklöf <daniel@ekloef.se>
+# Date:   Mon Mar 18 16:42:45 2024 +0100
+release=1
+source=()
+
+build() {
+	cd $SRC
+	git clone https://codeberg.org/dnkl/yambar.git
+	cd ${name}
+	git reset --hard ${_commit}
+
+	build-meson \
+		-Dbackend-wayland=enabled \
+		-Dplugin-pulse=enabled \
+		-Dplugin-river=enabled \
+		-Dbackend-x11=disabled \
+		-Dplugin-mpd=disabled \
+		-Dplugin-pipewire=disabled \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	# Install example configuration
+	install -D -m 0644 examples/configurations/*.conf \
+		-t $PKG/usr/share/yambar/examples
+
+	rm -r $PKG/usr/share/{doc,zsh}
+}
