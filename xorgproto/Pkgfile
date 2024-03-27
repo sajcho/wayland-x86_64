@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=xorgproto
-version=2023.2
+version=2024.1
 release=1
 source=(https://www.x.org/releases/individual/proto/${name}-${version}.tar.xz)
 
