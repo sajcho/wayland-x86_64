@@ -334,10 +334,10 @@ f:af0f846b464e4c76a5d5f6bda7099fcf:wlroots/Pkgfile
 f:992cf7c18cf1b6fcfe98d64b0602b71a:firefox/distribution.ini
 f:73472eae5b4777be69fb33cc08441db0:firefox/icu74.patch
 f:f7f0cfa5b7369f7c0dc923953aa856d6:firefox/.footprint
-f:6225d94111a8c7168e85570040605342:firefox/.signature
+f:1ea0fa2f1d77fcf35a6c7d205689bdd2:firefox/.signature
 f:d8743848c9164555d67d256814b91bd6:firefox/vendor.js
-f:871bb3725afab3736fd04881ff08eade:firefox/Pkgfile
-f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
+f:6509c0c55269cf67d04690b46621e875:firefox/Pkgfile
+f:2b9c0c88200fa4a33a2dc2f9cf15dcea:firefox/firefox.desktop
 f:44e469b11796500b6a9462e59bdd6137:libsecret/.footprint
 f:ee7978e5ee17625b865f60d049b699f1:libsecret/.signature
 f:2cefdb085383373a103815266eb96b38:libsecret/Pkgfile
@@ -402,8 +402,8 @@ f:53ccebcb08176a4f290a5065572ca4ef:atkmm2.36/.footprint
 f:f20593db7eb15630b4974cfc8c739d36:atkmm2.36/.signature
 f:0636cdc7cc43568ba4a24ccad3bfbc4c:atkmm2.36/Pkgfile
 f:1415335a4ef4398495b620730eff7ab8:xorgproto/.footprint
-f:8484bbf3d00b78b7ec392d07b292ccb9:xorgproto/.signature
-f:4f19dfcf0ad1e66310c8b5e28e1bffcd:xorgproto/Pkgfile
+f:3e1ffc3c72df5c7c24fd1136c07766ca:xorgproto/.signature
+f:3788d1578d5c5ee407e9529371f2ab2e:xorgproto/Pkgfile
 f:52e281aa9836fa6d4c40615079fc3606:appstream-glib/.footprint
 f:621aeb87031d0c54e525c7f21056d73b:appstream-glib/.signature
 f:452c9b3672014491781d26b159c3a8ba:appstream-glib/Pkgfile
