@@ -1,0 +1,18 @@
+# Description:	List Wayland toplevels
+# URL:		https://git.sr.ht/~leon_plickat/lswt
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	wayland-protocols
+
+name=lswt
+version=1.0.4
+release=1
+source=(https://git.sr.ht/~leon_plickat/lswt/archive/v${version}.tar.gz)
+renames=${name}-v${version}.tar.gz
+
+build() {
+	cd ${name}-v${version}
+
+	make V=1
+
+	make DESTDIR=$PKG PREFIX=/usr install
+}
