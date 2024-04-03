@@ -7,6 +7,7 @@ name=grim
 version=1.4.1
 release=1
 source=(https://git.sr.ht/~emersion/${name}/archive/v${version}.tar.gz)
+renames=${name}-v${version}.tar.gz
 
 build() {
 	cd ${name}-v${version}
