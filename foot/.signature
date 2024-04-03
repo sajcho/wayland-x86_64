@@ -1,6 +1,6 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/NemakIzjNMrzfbi63QX1QI16aYnEPT6iFGnzq/q8ESFf+t99JOtUDZ0Pg3VSRp1Ul+VuX3aAlkwxfhwt1Ya0IHDmQY=
-SHA256 (Pkgfile) = d662b2e922e5665df0e1cec50f2121009e2db14f3a5f9dbb12b6d07367ccc383
-SHA256 (.footprint) = 7d7eb0bb52f696ad9fac0da5911c410d1e32622dd6b2e8cac25b2cb83ebc4ca6
-SHA256 (foot-1.16.2.tar.gz) = 0e02af376e5f4a96eeb90470b7ad2e79a1d660db2a7d1aa772be43c7db00e475
+RWQLTWOc/NemalBQqdlMtEFXcqOX7cn8T+0+1qrHUa57FGZZJ2vxycw+FC9oaUORSHbUszQ6XCkX4kR8HTMEKQCKw9f0Lgqroww=
+SHA256 (Pkgfile) = 807b757741c7dcdfd38f9168c0b663a8e3f76186e32b04223806bc455ee5ccb6
+SHA256 (.footprint) = 61ff50935547d2db6e477e74e092b66dfdfae4851d7bf25966f12b8491039b6d
+SHA256 (foot-1.17.0.tar.gz) = ab5603edad89d26e8ae543e92c72210a1fbbe7abdf15a0729664b41baed6a3b8
 SHA256 (terminus.tar.xz) = 30995cf6e126eacf427b000319a20cef628d770115fdae5f07b6608454b0e415
