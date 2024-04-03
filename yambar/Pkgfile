@@ -4,10 +4,10 @@
 # Depends on:	pulseaudio scdoc
 
 name=yambar
-version=1.10.0-37-g4e07b63
-_commit=4e07b63cefdaa8b623ce7920e317ed8717d7c089
-# Author: Daniel Eklöf <daniel@ekloef.se>
-# Date:   Mon Mar 18 16:42:45 2024 +0100
+version=1.10.0-41-gda19c09
+_commit=da19c091222c0af48795db14550093786fa28b64
+# Author: Delgan <delgan.py@gmail.com>
+# Date:   Mon Apr 1 08:53:50 2024 +0000
 release=1
 source=()
 
