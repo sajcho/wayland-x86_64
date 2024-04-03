@@ -43,6 +43,7 @@ d:libliftoff
 d:xcb-util-wm
 d:pugixml
 d:font-dejavu-ttf
+d:wdisplays
 d:libxau
 d:fcft
 d:autoconf-2.13
@@ -61,6 +62,7 @@ d:xcb-util-cursor
 d:libdisplay-info
 d:gsettings-desktop-schemas
 d:gdk-pixbuf
+d:lswt
 d:libxcb
 d:gtk-layer-shell
 d:cairomm
@@ -108,9 +110,9 @@ f:2be8b661a3f42dbb5106b5e28061941c:libmypaint/.footprint
 f:0f141cd2acd380f40eba191c4883d35c:libmypaint/.signature
 f:5c8d0fb363f5863c1c8f8d049bc28c1f:libmypaint/Pkgfile
 f:e3144b54cf4de7faa73c59a6df217f41:foot/post-install
-f:7499ad2715709c57e3727384039750a9:foot/.footprint
-f:382c54138820ccb7ab138d046a92dbc8:foot/.signature
-f:b5103a3aa44e548e1e314dd28777bfa3:foot/Pkgfile
+f:334805f9ff5e94dfdd6c61cc96bb5d26:foot/.footprint
+f:9102ad1ca5ee554f426763a732e9f674:foot/.signature
+f:56587a482051edd8660de8ff9babddfc:foot/Pkgfile
 f:f41ab4438b13888176dff44435917794:foot/terminus.tar.xz
 f:eadbd1bac354a4ab0290465f07f73bbd:pangomm/.footprint
 f:672ad0e97664f43d96904b350e4dab70:pangomm/.signature
@@ -134,8 +136,8 @@ f:d3512ed058cc2237156fb5ac8c01978d:desktop-file-utils/.footprint
 f:98934ddc954d5d36b38e5d1a4ea10e85:desktop-file-utils/.signature
 f:9b140e5d9689c30e87a7ef69fd9c517a:desktop-file-utils/Pkgfile
 f:eb69665dca050566de22298baa0f09be:mesa/.footprint
-f:c1719ad4424e0cae1e8e086d684125f8:mesa/.signature
-f:d5c79c3a701525128de2681e2da5f3cb:mesa/Pkgfile
+f:994f77398c1e86df04fd165bfbae8cb5:mesa/.signature
+f:eb161669ec19505d0b66d14029885d8e:mesa/Pkgfile
 f:025ac5edd79136fbbdca2aaec5387aab:mesa/no-unlink-megadrivers.patch
 f:26a456a306766d05e342b8560e8784f2:mypaint-brushes/.footprint
 f:e1fdcacf4b3010c480c6a20c7c80c8fa:mypaint-brushes/.signature
@@ -203,8 +205,8 @@ f:cd5431e13f45d80f4b649d093055129d:wxwidgets/.footprint
 f:cf69112a0491078114dfc6c77b579790:wxwidgets/.signature
 f:7657514214e3b80ae4b088124662afcd:wxwidgets/Pkgfile
 f:dfd8e4f29dca2bee6629a6000159b461:grim/.footprint
-f:515dc59c73ad2a84f2078a76fac86877:grim/.signature
-f:43904b48457a823b7b8717e414a31efa:grim/Pkgfile
+f:52168832771ee89f708e77e8a1b3edad:grim/.signature
+f:b9b2243066bc7127321327b62e21f5a8:grim/Pkgfile
 f:5a8c47eb63c6aaa884f694aa7d57b494:python3-markupsafe/.footprint
 f:a06aa2b9abc10f1609f72b2b3e15e54d:python3-markupsafe/.signature
 f:67887ddaee28f394bff07e2c1dc72912:python3-markupsafe/Pkgfile
@@ -218,9 +220,9 @@ f:963db0b198639ef996ab5507ea6659e3:libinput/post-install
 f:4f313da0c75f3483a76cf9c5f1909f72:libinput/.footprint
 f:6f3ebaa9a72c1c85836f9d8c98a08579:libinput/.signature
 f:5e4540dd89851e73d43a13815d3fae2c:libinput/Pkgfile
-f:cacf3b3c9f98e3e9b7efca50127cc94c:pango/.footprint
-f:85a198dd85eed6ddbe7a6e95f2bb32c1:pango/.signature
-f:3c219dd2b49c2e4550c357a27101eb30:pango/Pkgfile
+f:ea79600d22e868d487b6608b246cc9d6:pango/.footprint
+f:20330bcb93ee614cc812f7046182721b:pango/.signature
+f:a5a0744ca82291ca5084ad6bcc9bf47e:pango/Pkgfile
 f:592a91b3fd927037bd7f2e40d2262cf5:gtkmm3/.footprint
 f:eade33fc06cbeae5f7a82488715959f2:gtkmm3/.signature
 f:3a9fd5895c79640d29c18707337be124:gtkmm3/Pkgfile
@@ -243,6 +245,9 @@ f:37efe59d9b090ca1e73ec69ce728e067:font-dejavu-ttf/.footprint
 f:b1fc0b94e78415c5168f35470f22ebf1:font-dejavu-ttf/.signature
 f:c884af8459c53f824bbddb94c655c3b2:font-dejavu-ttf/Pkgfile
 f:45b71930d59317d7d2a5c4a18d62c477:font-dejavu-ttf/45-dejavu.conf
+f:e4dc9b5707a1948fd759f8da5fdea962:wdisplays/.footprint
+f:dada4c3f5abe6924e2eb27073ee02815:wdisplays/.signature
+f:3c1c13f92874831290ec7d67d29e06ef:wdisplays/Pkgfile
 f:64f7093e3aa5007db7329be9395fa717:libxau/.footprint
 f:d735412fb87b6744093ea692e3115ec3:libxau/.signature
 f:66bf9cbbf3493c4af1a558f497314ef8:libxau/Pkgfile
@@ -259,8 +264,8 @@ f:5d9030b3f5a4fd3de7dbec7c631d995b:xcb-util-errors/.footprint
 f:16e3f88e413120984adc55bc1ddae759:xcb-util-errors/.signature
 f:6304c9c985561038491a24a69b823c20:xcb-util-errors/Pkgfile
 f:69d70ba404ae6bd39db615aa84a8fee3:yambar/.footprint
-f:93305be4f30657885e4aaa77006a65c8:yambar/.signature
-f:eef85c508aca727caa4d0c9ba619a20c:yambar/Pkgfile
+f:0eecc3db5f7dfa127713a1603b10577f:yambar/.signature
+f:12e34fecd837d6e9f15bae4a2da2131c:yambar/Pkgfile
 f:6d315d94dc653bd36d63e99dc9bfdd7a:cairomm1.16/.footprint
 f:10ed41b0cb93aba15dd4b5056e62b4a2:cairomm1.16/.signature
 f:21dc3d4625b2fa356c0022aaa44db61f:cairomm1.16/Pkgfile
@@ -302,6 +307,9 @@ f:7028a27cfa648bbacf5890613fb91aef:gdk-pixbuf/post-install
 f:626c84aa82312b293e6c3ca3746e598f:gdk-pixbuf/.footprint
 f:36f69b17bc834f8fc8b604baf8db2afa:gdk-pixbuf/.signature
 f:804cfd4a0bedc2577d6baba33ae17a09:gdk-pixbuf/Pkgfile
+f:a68dd5e6557a4aeb2e140d5bc1017e2f:lswt/.footprint
+f:188ea8fafcf8b47998f0ba408b675cc0:lswt/.signature
+f:be185964d91f5888e776a6d7507713e3:lswt/Pkgfile
 f:48440357f988aba17a991c02a0bd16e5:libxcb/.footprint
 f:428795bad8f73bacdaa79ef515c93e23:libxcb/.signature
 f:22ed0d5136845fc6af0fc02c0b27fe5f:libxcb/Pkgfile
@@ -319,9 +327,9 @@ f:117003bf2b7b1fc7fedb02936a35caec:sway/sway.desktop
 f:d1d43bfc03a449d40aee11d1095dbc87:wlrctl/.footprint
 f:8dc1b5537103222c94afdb340a3e9540:wlrctl/.signature
 f:935f28266e5377e9650fbd5913f26c67:wlrctl/Pkgfile
-f:cd9a9a50d825fa5f5ce9ec656c9b90c2:poppler/.footprint
-f:bebec1b1dfd3388ff5b00ee68e9926ab:poppler/.signature
-f:58bed4886cf504843c6e800f666f1e25:poppler/Pkgfile
+f:02d02c88f93fd944e863b444b3141ca7:poppler/.footprint
+f:c12ef1221e7d351f58614053887d2c36:poppler/.signature
+f:86aedc040cf9928f48cb756e6878ec3d:poppler/Pkgfile
 f:17fae8d0c1b34bf640858462f7f939a6:gimp-devel/.footprint
 f:b391289a33d6c715df88a5e2abd378e7:gimp-devel/.signature
 f:ef5c81d965d95b14bc9ed85deb5dfaf8:gimp-devel/Pkgfile
