@@ -1,0 +1,19 @@
+# Description:	GUI display configurator for wlroots compositors
+# URL:		https://github.com/artizirk/wdisplays
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gtk3
+
+name=wdisplays
+version=1.1.1
+release=1
+source=(https://github.com/artizirk/wdisplays/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
