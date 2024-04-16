@@ -1,4 +1,5 @@
-untrusted comment: verify with opt-x86_64.pub
-RWRkiJhlUJEGrFdcueourkIUYB4SqQrURXJR5OqXE80RIO4p5cdl5CMGZx66JxNoF0KdoYi61A+y/AZgtZxo+k4ZEnh93KbFiA8=
-SHA256 (Pkgfile) = ef06bfd93520519cb23b6fb93742f0846b8bc67b8bfbe709202b27933c213e5d
+untrusted comment: verify with wayland-x86_64.pub
+RWQLTWOc/Nemagl5jsO+YNLZWoVA2iQsadBXI5RM6Mzy4L2ISD18C0TJEOuIrvYOSsClm8+RRn3OOte5+Cf8aFCNdgTS2EV6Qw0=
+SHA256 (Pkgfile) = fa4c9840a113937950ff8564a91bcdff25ee4e55632d01161af16f8f08eb0d93
 SHA256 (.footprint) = 4ff807ca725f98ac5514ce97cc298dc0b4ffac301b75d204dfec2a3f5a368907
+SHA256 (river-0.3.0.tar.gz) = 3e8161f4443e7366e1ef0e0a3062daeb7fd5014cae953a95e3b878e8fc30adec

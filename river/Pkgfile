@@ -4,23 +4,15 @@
 # Depends on:	git libevdev libxkbcommon pixman scdoc wayland-protocols wlroots zig-bin
 
 name=river
-version=0.3.0-dev.294+ed99d7b
-_commit=ed99d7bc14d1f77e3e49bb84ddbc7459c5b4182e
-# Author: Isaac Freund <mail@isaacfreund.com>
-# Date:   Fri Mar 22 16:49:28 2024 +0100
+version=0.3.0
 release=1
-source=()
+source=(https://codeberg.org/river/river/releases/download/v${version}/${name}-${version}.tar.gz)
 
 build() {
-	cd $SRC
-
-	git clone https://codeberg.org/river/river.git
-	cd $SRC/river
-	git submodule update --init
-	git reset --hard ${_commit}
+	cd ${name}-${version}
 
 	# This installs it to $SRC/out
-	DESTDIR=$SRC/${name}/out zig build \
+	DESTDIR=$SRC/${name}-${version}/out zig build \
 		-Doptimize=ReleaseSafe \
 		-Dcpu=baseline \
 		-Dpie \
