@@ -4,7 +4,7 @@
 # Depends on:	autoconf-2.13 cbindgen ffmpeg libidl libnotify lld nodejs nss unzip zip
 
 name=firefox
-version=124.0.2
+version=125.0
 release=1
 source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-${version}.source.tar.xz \
 	icu74.patch \
@@ -22,7 +22,7 @@ build() {
 
 	# Build only wayland:
 	# Since the remoting protocol requires libx11 - let's disable it.
-	sed '2547,2559d' -i toolkit/moz.configure
+	sed '2556,2568d' -i toolkit/moz.configure
 
 	export SHELL="/bin/bash"
 	export BUILD_OFFICIAL=1
