@@ -162,8 +162,8 @@ f:8ef9a92e7b21cc399651bad24dc036e8:labwc/.signature
 f:5ffc53433129178a9d6559c71fc9be6a:labwc/Pkgfile
 f:55882dba4c0664b8d6cb2994cb65f031:labwc/README
 f:6d727e38e6f869f06cf43ecb55045878:river/.footprint
-f:655e0baf151a4d2d10c5ed0f294bceda:river/.signature
-f:23a1e1f09aacfed7a8aaa7a089be5334:river/Pkgfile
+f:ef4bf0a41ed198cfa3ccd269c6487310:river/.signature
+f:ad53a61bc89e72ff6dd86591d8de0d11:river/Pkgfile
 f:891ba388ef34a90a11211816d7bcac99:filezilla/filezilla-3.66.5-disable-xdg-open.patch
 f:92afac1ad4667a738245874518c9a2c9:filezilla/.footprint
 f:a4d08c8b855b6dfec5b7fc8a1122a31b:filezilla/.signature
@@ -342,9 +342,9 @@ f:af0f846b464e4c76a5d5f6bda7099fcf:wlroots/Pkgfile
 f:992cf7c18cf1b6fcfe98d64b0602b71a:firefox/distribution.ini
 f:73472eae5b4777be69fb33cc08441db0:firefox/icu74.patch
 f:f7f0cfa5b7369f7c0dc923953aa856d6:firefox/.footprint
-f:8cea3b74fb3f262436df36190a06521a:firefox/.signature
+f:8be133d74c455c63bd4732e29cd91e59:firefox/.signature
 f:d8743848c9164555d67d256814b91bd6:firefox/vendor.js
-f:07971a8324b3e05e618ff31e88c84402:firefox/Pkgfile
+f:69c968fa5efece02aa10ec1138facbaa:firefox/Pkgfile
 f:2b9c0c88200fa4a33a2dc2f9cf15dcea:firefox/firefox.desktop
 f:44e469b11796500b6a9462e59bdd6137:libsecret/.footprint
 f:ee7978e5ee17625b865f60d049b699f1:libsecret/.signature
