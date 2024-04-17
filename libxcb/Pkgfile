@@ -4,14 +4,13 @@
 # Depends on:	libinput libxau libxslt xcb-proto
 
 name=libxcb
-version=1.16.1
+version=1.17.0
 release=1
-source=(https://www.x.org/releases/individual/lib/${name}-${version}.tar.xz)
+source=(https://xcb.freedesktop.org/dist/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	PYTHON=/usr/bin/python3 \
 	./configure \
 		--build=$CHOST \
 		--host=$CHOST \
