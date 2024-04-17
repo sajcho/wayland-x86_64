@@ -196,8 +196,8 @@ f:b44c272fc566625029e31cba34a43f7b:swaylockd/.footprint
 f:91f26945f69c3463367f00014d1a4c88:swaylockd/.signature
 f:16410058dbd89ec0a6fc0c2e276be67f:swaylockd/Pkgfile
 f:d2a9855eb7f4c75697dfb60ad20b0c68:xcb-proto/.footprint
-f:2c5ad5632d64de9157ed2ba207cd1b05:xcb-proto/.signature
-f:19da855341d94cd9c52555f726230200:xcb-proto/Pkgfile
+f:8a06a1cd82c6f4e85fdde9d7ee94f94b:xcb-proto/.signature
+f:2a7a058a4a5b63abc54bb683f84baaeb:xcb-proto/Pkgfile
 f:05398125691a30dd584b48561169795e:libxkbcommon/.footprint
 f:24b6bf3b076362a592975ad3a58c8034:libxkbcommon/.signature
 f:8cd3af19414758bce0638b37d1f341a9:libxkbcommon/Pkgfile
@@ -264,8 +264,8 @@ f:5d9030b3f5a4fd3de7dbec7c631d995b:xcb-util-errors/.footprint
 f:16e3f88e413120984adc55bc1ddae759:xcb-util-errors/.signature
 f:6304c9c985561038491a24a69b823c20:xcb-util-errors/Pkgfile
 f:69d70ba404ae6bd39db615aa84a8fee3:yambar/.footprint
-f:0eecc3db5f7dfa127713a1603b10577f:yambar/.signature
-f:12e34fecd837d6e9f15bae4a2da2131c:yambar/Pkgfile
+f:a10c02f00904ca120c2064be9637f6f8:yambar/.signature
+f:c25f33dada76e54846f36967abfe1314:yambar/Pkgfile
 f:6d315d94dc653bd36d63e99dc9bfdd7a:cairomm1.16/.footprint
 f:10ed41b0cb93aba15dd4b5056e62b4a2:cairomm1.16/.signature
 f:21dc3d4625b2fa356c0022aaa44db61f:cairomm1.16/Pkgfile
@@ -311,8 +311,8 @@ f:a68dd5e6557a4aeb2e140d5bc1017e2f:lswt/.footprint
 f:188ea8fafcf8b47998f0ba408b675cc0:lswt/.signature
 f:be185964d91f5888e776a6d7507713e3:lswt/Pkgfile
 f:48440357f988aba17a991c02a0bd16e5:libxcb/.footprint
-f:428795bad8f73bacdaa79ef515c93e23:libxcb/.signature
-f:22ed0d5136845fc6af0fc02c0b27fe5f:libxcb/Pkgfile
+f:5b2cbe44422877e3f53408abebf88d76:libxcb/.signature
+f:82f854751d371ec47d2faf99777db2f2:libxcb/Pkgfile
 f:36f8d733e29e11673f35ab1ec13388aa:gtk-layer-shell/.footprint
 f:bf7748b233061e875c9f99c51a4509c2:gtk-layer-shell/.signature
 f:ac1cbf4b1efdf64732cd7538258eff2c:gtk-layer-shell/Pkgfile
@@ -333,9 +333,10 @@ f:86aedc040cf9928f48cb756e6878ec3d:poppler/Pkgfile
 f:17fae8d0c1b34bf640858462f7f939a6:gimp-devel/.footprint
 f:b391289a33d6c715df88a5e2abd378e7:gimp-devel/.signature
 f:ef5c81d965d95b14bc9ed85deb5dfaf8:gimp-devel/Pkgfile
+f:819f604b035535bf818b67da6b56f023:wofi/upstream-20240406.patch
 f:4554c2c0ae99aafcd97d786a7ecf338c:wofi/.footprint
-f:27a3d85291ceff5309e759b047e2f3a0:wofi/.signature
-f:c465beb05d619441c890240d4e4645b7:wofi/Pkgfile
+f:e08734a045a0402e79de340b647f68d8:wofi/.signature
+f:22e3613a4f441a7482a7833a7b1a63b6:wofi/Pkgfile
 f:54aebab1452801bf80bb51066a147255:wlroots/.footprint
 f:2f7f70daf39cdcb1c8e40cc8b66cc9c2:wlroots/.signature
 f:af0f846b464e4c76a5d5f6bda7099fcf:wlroots/Pkgfile
