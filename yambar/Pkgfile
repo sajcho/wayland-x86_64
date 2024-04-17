@@ -4,18 +4,12 @@
 # Depends on:	pulseaudio scdoc
 
 name=yambar
-version=1.10.0-41-gda19c09
-_commit=da19c091222c0af48795db14550093786fa28b64
-# Author: Delgan <delgan.py@gmail.com>
-# Date:   Mon Apr 1 08:53:50 2024 +0000
+version=1.11.0
 release=1
-source=()
+source=(https://codeberg.org/dnkl/yambar/releases/download/${version}/${name}-${version}.tar.gz)
 
 build() {
-	cd $SRC
-	git clone https://codeberg.org/dnkl/yambar.git
-	cd ${name}
-	git reset --hard ${_commit}
+	cd ${name}-${version}
 
 	build-meson \
 		-Dbackend-wayland=enabled \
@@ -24,6 +18,7 @@ build() {
 		-Dbackend-x11=disabled \
 		-Dplugin-mpd=disabled \
 		-Dplugin-pipewire=disabled \
+		-Dcore-plugins-as-shared-libraries=false \
 		. build
 
 	meson compile ${JOBS:+-j ${JOBS}} -v -C build
