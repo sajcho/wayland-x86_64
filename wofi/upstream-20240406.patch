@@ -1,0 +1,171 @@
+# HG changeset patch
+# User Scoopta <scoopta@scoopta.email>
+# Date 1707712212 28800
+#      Sun Feb 11 20:30:12 2024 -0800
+# Node ID 60d680e5a92c512f1a998b0145d081c016dd4f45
+# Parent  d6a48cb2263032dba35fcdb7b3088e0de685fa16
+Fixed segfault when cache is broken #213
+
+diff --git a/meson.build b/meson.build
+--- a/meson.build
++++ b/meson.build
+@@ -1,4 +1,4 @@
+-project('wofi', 'c', version : 'v1.4.1', default_options : ['c_std=c99', 'buildtype=release', 'warning_level=2'])
++project('wofi', 'c', version : 'hg', default_options : ['c_std=c99', 'buildtype=release', 'warning_level=2'])
+ cc = meson.get_compiler('c')
+ 
+ pkgcfg = import('pkgconfig')
+diff --git a/src/wofi.c b/src/wofi.c
+--- a/src/wofi.c
++++ b/src/wofi.c
+@@ -926,7 +926,16 @@
+ 				smallest_node = node;
+ 			}
+ 		}
+-		char* tmp = strdup(strchr(smallest_node->line, ' ') + 1);
++
++		char* space = strchr(smallest_node->line, ' ');
++
++		if(space == NULL) {
++			free(smallest_node->line);
++			wl_list_remove(&smallest_node->link);
++			continue;
++		}
++
++		char* tmp = strdup(space + 1);
+ 		free(smallest_node->line);
+ 		smallest_node->line = tmp;
+ 		wl_list_remove(&smallest_node->link);
+# HG changeset patch
+# User Scoopta <scoopta@scoopta.email>
+# Date 1710891752 25200
+#      Tue Mar 19 16:42:32 2024 -0700
+# Node ID a08c4582e01093ac102be1ae21502d5b85ef1087
+# Parent  60d680e5a92c512f1a998b0145d081c016dd4f45
+Fixed #216 arrow key issue. This was caused by the fix to #184. Both issues should now be resolved
+
+diff --git a/src/wofi.c b/src/wofi.c
+--- a/src/wofi.c
++++ b/src/wofi.c
+@@ -1130,8 +1130,8 @@
+ 	return sort_for_matching_mode(text1, text2, fallback, matching, filter, insensitive);
+ }
+ 
+-static void select_first(void) {
+-	GtkFlowBoxChild* child = gtk_flow_box_get_child_at_index(GTK_FLOW_BOX(inner_box), 0);
++static void select_idx(gint idx) {
++	GtkFlowBoxChild* child = gtk_flow_box_get_child_at_index(GTK_FLOW_BOX(inner_box), idx);
+ 	gtk_widget_grab_focus(GTK_WIDGET(child));
+ 	gtk_flow_box_select_child(GTK_FLOW_BOX(inner_box), GTK_FLOW_BOX_CHILD(child));
+ }
+@@ -1184,7 +1184,7 @@
+ 	user_moved = true;
+ 	if(outer_orientation == GTK_ORIENTATION_VERTICAL) {
+ 		if(gtk_widget_has_focus(entry) || gtk_widget_has_focus(scroll)) {
+-			select_first();
++			select_idx(1);
+ 			return;
+ 		}
+ 	}
+@@ -1200,7 +1200,7 @@
+ 	user_moved = true;
+ 	if(outer_orientation == GTK_ORIENTATION_HORIZONTAL) {
+ 		if(gtk_widget_has_focus(entry) || gtk_widget_has_focus(scroll)) {
+-			select_first();
++			select_idx(1);
+ 			return;
+ 		}
+ 	}
+@@ -1210,14 +1210,14 @@
+ static void move_forward(void) {
+ 	user_moved = true;
+ 	if(gtk_widget_has_focus(entry) || gtk_widget_has_focus(scroll)) {
+-		select_first();
++		select_idx(1);
+ 		return;
+ 	}
+ 
+ 	gtk_widget_child_focus(window, GTK_DIR_TAB_FORWARD);
+ 
+ 	if(gtk_widget_has_focus(entry)) {
+-		select_first();
++		select_idx(0);
+ 	}
+ }
+ 
+# HG changeset patch
+# User Scoopta <scoopta@scoopta.email>
+# Date 1712389243 25200
+#      Sat Apr 06 00:40:43 2024 -0700
+# Node ID e59e3f58117b9150b57c73ce6e0a4606ff4fe08d
+# Parent  a08c4582e01093ac102be1ae21502d5b85ef1087
+The hide_search config option now behaves correctly. It does exactly the same thing as key_hide_search but on launch. This now also allows you to un-hide the search with key_hide_search if wofi is launched with hide_search=true
+
+diff --git a/src/wofi.c b/src/wofi.c
+--- a/src/wofi.c
++++ b/src/wofi.c
+@@ -109,6 +109,7 @@
+ static char* pre_display_cmd = NULL;
+ static bool pre_display_exec = false;
+ static bool single_click = false;
++static bool hide_search = false;
+ static GdkModifierType shift_mask = GDK_SHIFT_MASK;
+ static GdkModifierType ctrl_mask = GDK_CONTROL_MASK;
+ static GdkModifierType alt_mask = GDK_MOD1_MASK;
+@@ -1753,6 +1754,7 @@
+ static gboolean do_percent_size_first(gpointer data){
+ 	gdk_threads_add_timeout(50, do_percent_size, data);
+ 	do_percent_size(data);
++	gtk_widget_set_visible(entry, !hide_search);
+ 	return G_SOURCE_REMOVE;
+ }
+ 
+@@ -1805,7 +1807,7 @@
+ 	sort_order = config_get_mnemonic(config, "sort_order", "default", 2, "default", "alphabetical");
+ 	line_wrap = config_get_mnemonic(config, "line_wrap", "off", 4, "off", "word", "char", "word_char") - 1;
+ 	bool global_coords = strcmp(config_get(config, "global_coords", "false"), "true") == 0;
+-	bool hide_search = strcmp(config_get(config, "hide_search", "false"), "true") == 0;
++	hide_search = strcmp(config_get(config, "hide_search", "false"), "true") == 0;
+ 	char* search = map_get(config, "search");
+ 	dynamic_lines = strcmp(config_get(config, "dynamic_lines", "false"), "true") == 0;
+ 	char* monitor = map_get(config, "monitor");
+@@ -2012,7 +2014,6 @@
+ 	gtk_widget_set_name(entry, "input");
+ 	gtk_entry_set_placeholder_text(GTK_ENTRY(entry), prompt);
+ 	gtk_container_add(GTK_CONTAINER(outer_box), entry);
+-	gtk_widget_set_child_visible(entry, !hide_search);
+ 
+ 	if(search != NULL) {
+ 		gtk_entry_set_text(GTK_ENTRY(entry), search);
+# HG changeset patch
+# User Scoopta <scoopta@scoopta.email>
+# Date 1712389669 25200
+#      Sat Apr 06 00:47:49 2024 -0700
+# Node ID 3f4a8c8c18d124741aae61433841e8666a449559
+# Parent  e59e3f58117b9150b57c73ce6e0a4606ff4fe08d
+Fixed hide_search=true for surfaces that don't use percent sizing
+
+diff --git a/src/wofi.c b/src/wofi.c
+--- a/src/wofi.c
++++ b/src/wofi.c
+@@ -1754,6 +1754,11 @@
+ static gboolean do_percent_size_first(gpointer data){
+ 	gdk_threads_add_timeout(50, do_percent_size, data);
+ 	do_percent_size(data);
++	return G_SOURCE_REMOVE;
++}
++
++static gboolean hide_search_first(gpointer data) {
++	(void) data;
+ 	gtk_widget_set_visible(entry, !hide_search);
+ 	return G_SOURCE_REMOVE;
+ }
+@@ -2073,6 +2078,8 @@
+ 		gdk_threads_add_timeout(25, do_percent_size_first, geo_str);
+ 	}
+ 
++	gdk_threads_add_timeout(5, hide_search_first, NULL);
++
+ 	wl_list_init(&mode_list);
+ 
+ 	pthread_create(&mode_thread, NULL, start_mode_thread, mode);
