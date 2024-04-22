@@ -111,8 +111,8 @@ f:0f141cd2acd380f40eba191c4883d35c:libmypaint/.signature
 f:5c8d0fb363f5863c1c8f8d049bc28c1f:libmypaint/Pkgfile
 f:e3144b54cf4de7faa73c59a6df217f41:foot/post-install
 f:23febbcf27edeaf975b0f2cd61dd8a27:foot/.footprint
-f:40ab1e4b39a70c210f49c569b6a7730a:foot/.signature
-f:1e4847349c9daa833044c3cfed176511:foot/Pkgfile
+f:eb72c68274fdc86df162dfc2310589c0:foot/.signature
+f:e433fe4fcf88670029f7c0cdc3a5e68d:foot/Pkgfile
 f:f41ab4438b13888176dff44435917794:foot/terminus.tar.xz
 f:eadbd1bac354a4ab0290465f07f73bbd:pangomm/.footprint
 f:672ad0e97664f43d96904b350e4dab70:pangomm/.signature
@@ -174,9 +174,9 @@ f:da1113d05bead212bb1ef21ddb4a0a20:xcb-util-image/Pkgfile
 f:3a09e87aa9f3e487cf98edb75cde3d12:libnotify/.footprint
 f:15ad03f9e9e4d5990abf57feb8241f28:libnotify/.signature
 f:67b0238c36cbf8cd70e3122d65fbc5d8:libnotify/Pkgfile
-f:68788fd91eaced164f4cbf5c35a26821:wayland-protocols/.footprint
-f:894047af526f229e951fc9cf0cabaf02:wayland-protocols/.signature
-f:a13bf8587df80b9319351c72cef5c0bb:wayland-protocols/Pkgfile
+f:8663f30815107a6fc2e446fd687ca38c:wayland-protocols/.footprint
+f:1d949bf206086d67374b7fbd09602dde:wayland-protocols/.signature
+f:402b712c8d19db89824272723537c432:wayland-protocols/Pkgfile
 f:5e36e597768bc6b04a9b5b81e167851c:libdrm/.footprint
 f:c42ef0721bba0542395c074963c43f2b:libdrm/.signature
 f:cb4103c19096a652f5a0ff2b3b323e16:libdrm/Pkgfile
@@ -304,9 +304,9 @@ f:490fcdf4396e349c2a57d0560081101c:gsettings-desktop-schemas/.footprint
 f:fab887c6ae9097e3b20dff9966ae1622:gsettings-desktop-schemas/.signature
 f:7485ae65d7facc7088348b60a85801d5:gsettings-desktop-schemas/Pkgfile
 f:7028a27cfa648bbacf5890613fb91aef:gdk-pixbuf/post-install
-f:626c84aa82312b293e6c3ca3746e598f:gdk-pixbuf/.footprint
-f:36f69b17bc834f8fc8b604baf8db2afa:gdk-pixbuf/.signature
-f:804cfd4a0bedc2577d6baba33ae17a09:gdk-pixbuf/Pkgfile
+f:baffe967a72d0b511903f9dedad0550d:gdk-pixbuf/.footprint
+f:0df05ead3d1cf11999251230028e4f8d:gdk-pixbuf/.signature
+f:21bfc1deb2f418b95c575029e85f9015:gdk-pixbuf/Pkgfile
 f:a68dd5e6557a4aeb2e140d5bc1017e2f:lswt/.footprint
 f:188ea8fafcf8b47998f0ba408b675cc0:lswt/.signature
 f:be185964d91f5888e776a6d7507713e3:lswt/Pkgfile
