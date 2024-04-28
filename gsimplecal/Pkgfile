@@ -1,0 +1,24 @@
+# Description:	Simple and lightweight GTK calendar
+# URL:		https://dmedvinsky.github.io/gsimplecal/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gtk3
+
+name=gsimplecal
+version=2.5.1
+release=1
+source=(https://github.com/dmedvinsky/gsimplecal/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./autogen.sh
+
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix=/usr
+
+	make V=1
+
+	make DESTDIR=$PKG install
+}
