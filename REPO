@@ -378,8 +378,8 @@ f:142dda0d582783a893195567fcc087f0:glibmm2.68/.footprint
 f:0762eb6db1959699f26a27ff53446964:glibmm2.68/.signature
 f:2fb752c69df06be7a101ce2de8628a84:glibmm2.68/Pkgfile
 f:7b1d297b6c94898a607ed1e9637b2e6b:gtklock/.footprint
-f:8316b0e31815faa826cbc4fe87f91469:gtklock/.signature
-f:15f3b83c691a659703adba4034c4bc95:gtklock/Pkgfile
+f:f9ed6202e5748fc9734b4dea067c2d55:gtklock/.signature
+f:429b469bb81f8c539e8ab5a58ffe3893:gtklock/Pkgfile
 f:65665f1d29cb1ea972b3e3353dae6dd8:adwaita-icon-theme/post-install
 f:92f340aea56d2b1758356530261d362d:adwaita-icon-theme/.footprint
 f:6dd58a41cbff6f86ba7bc368d2900db8:adwaita-icon-theme/.signature
