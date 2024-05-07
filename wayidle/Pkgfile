@@ -1,0 +1,23 @@
+# Description:	Wait for wayland compositor idle timeouts
+# URL:		https://git.sr.ht/~whynothugo/wayidle
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	rust
+
+name=wayidle
+version=0.1.1
+release=1
+source=(https://git.sr.ht/~whynothugo/wayidle/archive/v${version}.tar.gz)
+renames=(${name}-v${version}.tar.gz)
+
+build() {
+	cd ${name}-v${version}
+
+	mkdir "$PKGMK_SOURCE_DIR/rust" || true
+	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
+
+	cargo fetch --verbose --locked --target $CHOST
+
+	cargo build --verbose --release --frozen --all-targets
+
+	install -D -m 0755 -t $PKG/usr/bin target/release/wayidle
+}
