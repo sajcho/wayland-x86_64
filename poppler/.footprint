@@ -46,6 +46,7 @@ drwxr-xr-x	root/root	usr/include/poppler/
 -rw-r--r--	root/root	usr/include/poppler/GfxState.h
 -rw-r--r--	root/root	usr/include/poppler/GfxState_helpers.h
 -rw-r--r--	root/root	usr/include/poppler/GlobalParams.h
+-rw-r--r--	root/root	usr/include/poppler/HashAlgorithm.h
 -rw-r--r--	root/root	usr/include/poppler/Hints.h
 -rw-r--r--	root/root	usr/include/poppler/JArithmeticDecoder.h
 -rw-r--r--	root/root	usr/include/poppler/JBIG2Stream.h
@@ -77,6 +78,7 @@ drwxr-xr-x	root/root	usr/include/poppler/
 -rw-r--r--	root/root	usr/include/poppler/ProfileData.h
 -rw-r--r--	root/root	usr/include/poppler/Rendition.h
 -rw-r--r--	root/root	usr/include/poppler/SecurityHandler.h
+-rw-r--r--	root/root	usr/include/poppler/SignatureInfo.h
 -rw-r--r--	root/root	usr/include/poppler/Sound.h
 -rw-r--r--	root/root	usr/include/poppler/SplashOutputDev.h
 -rw-r--r--	root/root	usr/include/poppler/Stream-CCITT.h
@@ -172,15 +174,15 @@ drwxr-xr-x	root/root	usr/include/poppler/splash/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Poppler-0.18.typelib
-lrwxrwxrwx	root/root	usr/lib/libpoppler-cpp.so -> libpoppler-cpp.so.0
-lrwxrwxrwx	root/root	usr/lib/libpoppler-cpp.so.0 -> libpoppler-cpp.so.0.11.0
--rwxr-xr-x	root/root	usr/lib/libpoppler-cpp.so.0.11.0
+lrwxrwxrwx	root/root	usr/lib/libpoppler-cpp.so -> libpoppler-cpp.so.1
+lrwxrwxrwx	root/root	usr/lib/libpoppler-cpp.so.1 -> libpoppler-cpp.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libpoppler-cpp.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libpoppler-glib.so -> libpoppler-glib.so.8
 lrwxrwxrwx	root/root	usr/lib/libpoppler-glib.so.8 -> libpoppler-glib.so.8.26.0
 -rwxr-xr-x	root/root	usr/lib/libpoppler-glib.so.8.26.0
-lrwxrwxrwx	root/root	usr/lib/libpoppler.so -> libpoppler.so.136
-lrwxrwxrwx	root/root	usr/lib/libpoppler.so.136 -> libpoppler.so.136.0.0
--rwxr-xr-x	root/root	usr/lib/libpoppler.so.136.0.0
+lrwxrwxrwx	root/root	usr/lib/libpoppler.so -> libpoppler.so.137
+lrwxrwxrwx	root/root	usr/lib/libpoppler.so.137 -> libpoppler.so.137.0.0
+-rwxr-xr-x	root/root	usr/lib/libpoppler.so.137.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/poppler-cpp.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/poppler-glib.pc
