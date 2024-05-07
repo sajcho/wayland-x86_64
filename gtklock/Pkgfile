@@ -1,7 +1,7 @@
 # Description:	GTK-based lockscreen for Wayland
 # URL:		https://github.com/jovanlanik/gtklock
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gtk-layer-shell linux-pam scdoc wayland-protocols
+# Depends on:	gtk-layer-shell gtk-session-lock linux-pam scdoc wayland-protocols
 
 name=gtklock
 version=3.0.0
