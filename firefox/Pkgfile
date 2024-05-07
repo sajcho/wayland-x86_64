@@ -4,9 +4,10 @@
 # Depends on:	autoconf-2.13 cbindgen ffmpeg libidl libnotify lld nodejs nss unzip zip
 
 name=firefox
-version=125.0.2
+version=125.0.3
 release=1
 source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-${version}.source.tar.xz \
+	encoding_rs-to-0.8.34-to-deal-wit.patch \
 	icu74.patch \
 	distribution.ini \
 	firefox.desktop \
@@ -14,6 +15,8 @@ source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-$
 
 build() {
 	cd ${name}-${version}
+
+	patch -p1 -i $SRC/encoding_rs-to-0.8.34-to-deal-wit.patch
 
 	patch -p1 -i $SRC/icu74.patch
 
