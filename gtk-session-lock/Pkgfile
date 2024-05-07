@@ -1,0 +1,21 @@
+# Description:	GTK Session Lock for GTK3
+# URL:		https://github.com/Cu3PO42/gtk-session-lock
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gtk-layer-shell
+
+name=gtk-session-lock
+version=0.2.0
+release=1
+source=(https://github.com/Cu3PO42/gtk-session-lock/archive/v${version}/${name}-v${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dvapi=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
