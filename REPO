@@ -21,6 +21,7 @@ d:river
 d:filezilla
 d:xcb-util-image
 d:libnotify
+d:wayidle
 d:wayland-protocols
 d:libdrm
 d:wl-clipboard
@@ -51,6 +52,7 @@ d:libevdev
 d:xcb-util-errors
 d:yambar
 d:cairomm1.16
+d:gtk-session-lock
 d:babl
 d:wlr-randr
 d:wayland-utils
@@ -79,6 +81,7 @@ d:font-awesome-ttf
 d:libfilezilla
 d:wf-recorder
 d:glibmm2.68
+d:gtklock
 d:adwaita-icon-theme
 d:atkmm
 d:hicolor-icon-theme
@@ -97,8 +100,8 @@ d:atkmm2.36
 d:xorgproto
 d:appstream-glib
 f:5a87b970907bca8f785b783e2a6e6f21:swaybg/.footprint
-f:d051ae0eb3ca31cae784dc2c393637d8:swaybg/.signature
-f:6e6a7d4a22ddc41cba611070ff982a47:swaybg/Pkgfile
+f:d4e2317b5b560844738a33904e7b53b1:swaybg/.signature
+f:5e816affb24ad5733efc43230149e72c:swaybg/Pkgfile
 f:44260546707b5adeef54b38c6ecd0e54:wayland/tests-ignore-debugger.patch
 f:a173e7436b5e00682645d181d32f8c0c:wayland/.footprint
 f:8511b85ab5577b4e982f00ed98e08d38:wayland/.signature
@@ -175,6 +178,9 @@ f:da1113d05bead212bb1ef21ddb4a0a20:xcb-util-image/Pkgfile
 f:3a09e87aa9f3e487cf98edb75cde3d12:libnotify/.footprint
 f:15ad03f9e9e4d5990abf57feb8241f28:libnotify/.signature
 f:67b0238c36cbf8cd70e3122d65fbc5d8:libnotify/Pkgfile
+f:b9bca123952b97715cbeac1a1cfcb497:wayidle/.footprint
+f:30feb0c68fa05ee291de3d7e3af4b31b:wayidle/.signature
+f:ba78d6e64bb64cf3d3006a409585fd5c:wayidle/Pkgfile
 f:8663f30815107a6fc2e446fd687ca38c:wayland-protocols/.footprint
 f:a6544e8bedec504c50ebc34cb337399f:wayland-protocols/.signature
 f:743487539fbaa46b6a14c1e1b27f3c5a:wayland-protocols/Pkgfile
@@ -270,6 +276,9 @@ f:c25f33dada76e54846f36967abfe1314:yambar/Pkgfile
 f:6d315d94dc653bd36d63e99dc9bfdd7a:cairomm1.16/.footprint
 f:10ed41b0cb93aba15dd4b5056e62b4a2:cairomm1.16/.signature
 f:21dc3d4625b2fa356c0022aaa44db61f:cairomm1.16/Pkgfile
+f:3259b3ac3c9599d7666982e1f6c1d8b1:gtk-session-lock/.footprint
+f:1304b7296af6cb2f2e39d36f3f3aa6cd:gtk-session-lock/.signature
+f:b11b6982ee5f4c70af432a9759989494:gtk-session-lock/Pkgfile
 f:ad6dfef6608e6f9cf9134ff24adfb1ba:babl/.footprint
 f:6fd17d85f0860e7b7b172437be895b28:babl/.signature
 f:0422c671bd83104aaa6217c8ca3ef3db:babl/Pkgfile
@@ -331,9 +340,9 @@ f:a1cac3b62ea0f2789ff5f178e668da39:gsimplecal/Pkgfile
 f:d1d43bfc03a449d40aee11d1095dbc87:wlrctl/.footprint
 f:8dc1b5537103222c94afdb340a3e9540:wlrctl/.signature
 f:935f28266e5377e9650fbd5913f26c67:wlrctl/Pkgfile
-f:02d02c88f93fd944e863b444b3141ca7:poppler/.footprint
-f:c12ef1221e7d351f58614053887d2c36:poppler/.signature
-f:86aedc040cf9928f48cb756e6878ec3d:poppler/Pkgfile
+f:61ef1298b75f03ec2ad34bcd9dd54110:poppler/.footprint
+f:2f8f5726a89eaf1509755f4977838128:poppler/.signature
+f:c83b7da4189c6ca866525dfdc08761e3:poppler/Pkgfile
 f:17fae8d0c1b34bf640858462f7f939a6:gimp-devel/.footprint
 f:b391289a33d6c715df88a5e2abd378e7:gimp-devel/.signature
 f:ef5c81d965d95b14bc9ed85deb5dfaf8:gimp-devel/Pkgfile
@@ -345,11 +354,12 @@ f:54aebab1452801bf80bb51066a147255:wlroots/.footprint
 f:35720b886592bde2e7df0ec1ae93434c:wlroots/.signature
 f:87052024bb10496c3a9f49749d8171c9:wlroots/Pkgfile
 f:992cf7c18cf1b6fcfe98d64b0602b71a:firefox/distribution.ini
+f:0e93c7dd5eb0ce911c6182bdc43160b4:firefox/encoding_rs-to-0.8.34-to-deal-wit.patch
 f:73472eae5b4777be69fb33cc08441db0:firefox/icu74.patch
 f:f7f0cfa5b7369f7c0dc923953aa856d6:firefox/.footprint
-f:a767c0e483dfd7065b6233d3ec7e345d:firefox/.signature
+f:07b8972f94483c52dfef8751d14b22c1:firefox/.signature
 f:d8743848c9164555d67d256814b91bd6:firefox/vendor.js
-f:aa53007abaf061a8b38f12fe1ff3b8f1:firefox/Pkgfile
+f:4555f7c76b456f4595907baace034d40:firefox/Pkgfile
 f:2b9c0c88200fa4a33a2dc2f9cf15dcea:firefox/firefox.desktop
 f:44e469b11796500b6a9462e59bdd6137:libsecret/.footprint
 f:ee7978e5ee17625b865f60d049b699f1:libsecret/.signature
@@ -367,6 +377,9 @@ f:1626f186456a8838a5c2208f6f2385c3:wf-recorder/Pkgfile
 f:142dda0d582783a893195567fcc087f0:glibmm2.68/.footprint
 f:0762eb6db1959699f26a27ff53446964:glibmm2.68/.signature
 f:2fb752c69df06be7a101ce2de8628a84:glibmm2.68/Pkgfile
+f:7b1d297b6c94898a607ed1e9637b2e6b:gtklock/.footprint
+f:8316b0e31815faa826cbc4fe87f91469:gtklock/.signature
+f:15f3b83c691a659703adba4034c4bc95:gtklock/Pkgfile
 f:65665f1d29cb1ea972b3e3353dae6dd8:adwaita-icon-theme/post-install
 f:92f340aea56d2b1758356530261d362d:adwaita-icon-theme/.footprint
 f:6dd58a41cbff6f86ba7bc368d2900db8:adwaita-icon-theme/.signature
