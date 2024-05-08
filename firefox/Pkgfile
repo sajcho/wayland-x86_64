@@ -9,9 +9,7 @@ release=1
 source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-${version}.source.tar.xz \
 	encoding_rs-to-0.8.34-to-deal-wit.patch \
 	icu74.patch \
-	distribution.ini \
-	firefox.desktop \
-	vendor.js)
+	firefox.desktop)
 
 build() {
 	cd ${name}-${version}
@@ -104,12 +102,6 @@ EOF
 	./mach build
 
 	DESTDIR=$PKG ./mach install
-
-	# optional - change to suit your needs
-	#install -D -m 0644 $SRC/distribution.ini \
-	#	$PKG/usr/lib/firefox/distribution/distribution.ini
-	#install -D -m 0644 $SRC/vendor.js \
-	#	$PKG/usr/lib/firefox/browser/defaults/preferences/vendor.js
 
 	install -D -m 0644 $SRC/firefox.desktop \
 		$PKG/usr/share/applications/firefox.desktop
