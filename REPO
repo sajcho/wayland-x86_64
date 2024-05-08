@@ -353,13 +353,11 @@ f:22e3613a4f441a7482a7833a7b1a63b6:wofi/Pkgfile
 f:54aebab1452801bf80bb51066a147255:wlroots/.footprint
 f:35720b886592bde2e7df0ec1ae93434c:wlroots/.signature
 f:87052024bb10496c3a9f49749d8171c9:wlroots/Pkgfile
-f:992cf7c18cf1b6fcfe98d64b0602b71a:firefox/distribution.ini
 f:0e93c7dd5eb0ce911c6182bdc43160b4:firefox/encoding_rs-to-0.8.34-to-deal-wit.patch
 f:73472eae5b4777be69fb33cc08441db0:firefox/icu74.patch
 f:f7f0cfa5b7369f7c0dc923953aa856d6:firefox/.footprint
-f:07b8972f94483c52dfef8751d14b22c1:firefox/.signature
-f:d8743848c9164555d67d256814b91bd6:firefox/vendor.js
-f:4555f7c76b456f4595907baace034d40:firefox/Pkgfile
+f:8de7de18f18fba566a30d863bf28bbbc:firefox/.signature
+f:333b95aa8be5bceb5ec1b16eb562dcb5:firefox/Pkgfile
 f:2b9c0c88200fa4a33a2dc2f9cf15dcea:firefox/firefox.desktop
 f:44e469b11796500b6a9462e59bdd6137:libsecret/.footprint
 f:ee7978e5ee17625b865f60d049b699f1:libsecret/.signature
