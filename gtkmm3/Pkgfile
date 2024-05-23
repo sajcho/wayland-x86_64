@@ -5,7 +5,7 @@
 
 name=gtkmm3
 _realname=gtkmm
-version=3.24.8
+version=3.24.9
 release=1
 source=(https://download.gnome.org/sources/gtkmm/${version%.*}/${_realname}-${version}.tar.xz)
 
