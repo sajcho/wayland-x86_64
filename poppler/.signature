@@ -1,5 +1,5 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/NemaiW8GTSZIiYGOMKlkCR8pk256jFOz3yozESXcGn28c3bFvZuGQTqC4XMVDK7ArXBl1KKb1TgidGi5sUp4FWg2wo=
-SHA256 (Pkgfile) = 931ea5d4eb114abf936d68a1ed4e0141e637bbcd9485a5d2559b037ef58bb2c0
+RWQLTWOc/NemanHF5N5eZq84iHxF02xHy3gbgJuq1BrEe6VOlfoNs/Mjlu/mc/AZSfjqzgiolKg4A4ujNfKLI1n3WVlukm6UJAE=
+SHA256 (Pkgfile) = 415407c72f47f7432691ffa5392b75ee5e053d62b8d0b6394ddfe45b6754f30c
 SHA256 (.footprint) = 81c1c6c055fdcac97caf2d1ccec1f21f7025972d90ef5415fa63c6ea7e8a73d5
-SHA256 (poppler-24.05.0.tar.xz) = d8c5eb30b50285ad9f0af8c6335cc2d3b9597fca475cbc2598a5479fa379f779
+SHA256 (poppler-24.06.0.tar.xz) = 0cdabd495cada11f6ee9e75c793f80daf46367b66c25a63ee8c26d0f9ec40c76
