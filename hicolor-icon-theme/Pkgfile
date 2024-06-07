@@ -3,15 +3,16 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=hicolor-icon-theme
-version=0.17
+version=0.18
 release=1
 source=(http://icon-theme.freedesktop.org/releases/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	./configure \
-		--prefix=/usr
+	build-meson . build
 
-	make DESTDIR=$PKG install
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
 }
