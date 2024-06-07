@@ -4,7 +4,7 @@
 # Depends on:	git libevdev libxkbcommon pixman scdoc wayland-protocols wlroots zig-bin
 
 name=river
-version=0.3.0
+version=0.3.2
 release=1
 source=(https://codeberg.org/river/river/releases/download/v${version}/${name}-${version}.tar.gz)
 
@@ -16,6 +16,7 @@ build() {
 		-Doptimize=ReleaseSafe \
 		-Dcpu=baseline \
 		-Dpie \
+		-Dno-llvm \
 		--prefix /usr install
 
 	cp -r out/* $PKG
