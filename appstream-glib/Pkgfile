@@ -4,8 +4,8 @@
 # Depends on:	json-glib gtk3 yaml
 
 name=appstream-glib
-version=0.8.2
-release=2
+version=0.8.3
+release=1
 source=(https://people.freedesktop.org/~hughsient/${name}/releases/${name}-${version}.tar.xz)
 
 build() {
@@ -20,7 +20,6 @@ build() {
 		-Dalpm=false \
 		-Dgtk-doc=false \
 		-Drpm=false \
-		-Dstemmer=false \
 		. build
 
 	meson compile ${JOBS:+-j ${JOBS}} -v -C build
