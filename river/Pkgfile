@@ -1,10 +1,10 @@
 # Description:	Dynamic Tiling Wayland Compositor
 # URL:		https://github.com/riverwm/river
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	git libevdev libxkbcommon pixman scdoc wayland-protocols wlroots zig-bin
+# Depends on:	git libevdev libxkbcommon pixman scdoc wayland-protocols wlroots zig
 
 name=river
-version=0.3.2
+version=0.3.3
 release=1
 source=(https://codeberg.org/river/river/releases/download/v${version}/${name}-${version}.tar.gz)
 
@@ -16,7 +16,6 @@ build() {
 		-Doptimize=ReleaseSafe \
 		-Dcpu=baseline \
 		-Dpie \
-		-Dno-llvm \
 		--prefix /usr install
 
 	cp -r out/* $PKG
