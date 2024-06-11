@@ -353,11 +353,10 @@ f:22e3613a4f441a7482a7833a7b1a63b6:wofi/Pkgfile
 f:54aebab1452801bf80bb51066a147255:wlroots/.footprint
 f:35720b886592bde2e7df0ec1ae93434c:wlroots/.signature
 f:87052024bb10496c3a9f49749d8171c9:wlroots/Pkgfile
-f:9e4c50c7fedd785aa2847cbc4e9ae6d9:firefox/0001-Bug-1882209-Update-encoding_rs-to-0.8.34-to-deal-wit.patch
 f:73472eae5b4777be69fb33cc08441db0:firefox/icu74.patch
 f:f7f0cfa5b7369f7c0dc923953aa856d6:firefox/.footprint
-f:b13e1f4629207334d8a426e6f1ddeecf:firefox/.signature
-f:b042708d165b70fb87bb65c8a92ff4e6:firefox/Pkgfile
+f:559cfdc077c208ffcd40aef5ded5aed9:firefox/.signature
+f:86997b61a7854170d51d85f4ece099fd:firefox/Pkgfile
 f:2b9c0c88200fa4a33a2dc2f9cf15dcea:firefox/firefox.desktop
 f:44e469b11796500b6a9462e59bdd6137:libsecret/.footprint
 f:ee7978e5ee17625b865f60d049b699f1:libsecret/.signature
@@ -369,9 +368,10 @@ f:33006d5cec87851d222aee2cbb51fcd8:font-awesome-ttf/Pkgfile
 f:6cb4490566dd86360fbde1faa96041f9:libfilezilla/.footprint
 f:9ba4ef58cb8a2aacbd58363fec98f151:libfilezilla/.signature
 f:d90620a240d15de7cfd23f1922be1add:libfilezilla/Pkgfile
+f:0019563f43d51fa892094e947ee421b1:wf-recorder/ffmpeg-7.patch
 f:a73c76b58ce320bdc2c96e10e6bea7e6:wf-recorder/.footprint
-f:59685f2359223cd6044ae14d89b3067a:wf-recorder/.signature
-f:1626f186456a8838a5c2208f6f2385c3:wf-recorder/Pkgfile
+f:129490abb7c78c171496cd47f569c25c:wf-recorder/.signature
+f:2cb721d9613d6f7546838045cb3c0050:wf-recorder/Pkgfile
 f:142dda0d582783a893195567fcc087f0:glibmm2.68/.footprint
 f:0762eb6db1959699f26a27ff53446964:glibmm2.68/.signature
 f:2fb752c69df06be7a101ce2de8628a84:glibmm2.68/Pkgfile
