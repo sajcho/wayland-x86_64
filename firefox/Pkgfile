@@ -4,17 +4,14 @@
 # Depends on:	autoconf-2.13 cbindgen ffmpeg libidl libnotify lld nodejs nss unzip zip
 
 name=firefox
-version=126.0.1
+version=127.0
 release=1
 source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-${version}.source.tar.xz \
-	0001-Bug-1882209-Update-encoding_rs-to-0.8.34-to-deal-wit.patch \
 	icu74.patch \
 	firefox.desktop)
 
 build() {
 	cd ${name}-${version}
-
-	patch -p1 -i $SRC/0001-Bug-1882209-Update-encoding_rs-to-0.8.34-to-deal-wit.patch
 
 	patch -p1 -i $SRC/icu74.patch
 
@@ -23,7 +20,7 @@ build() {
 
 	# Build only wayland:
 	# Since the remoting protocol requires libx11 - let's disable it.
-	sed '2550,2562d' -i toolkit/moz.configure
+	sed '2573,2585d' -i toolkit/moz.configure
 
 	export SHELL="/bin/bash"
 	export BUILD_OFFICIAL=1
