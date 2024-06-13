@@ -5,7 +5,7 @@
 
 name=glibmm2.68
 _realname=glibmm
-version=2.78.0
+version=2.80.0
 release=1
 source=(https://download.gnome.org/sources/glibmm/${version%.*}/${_realname}-${version}.tar.xz)
 
