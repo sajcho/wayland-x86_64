@@ -50,7 +50,9 @@ drwxr-xr-x	root/root	usr/share/libinput/
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-cypress.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-elantech.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-glorious.quirks
+-rw-r--r--	root/root	usr/share/libinput/30-vendor-huion.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-ibm.quirks
+-rw-r--r--	root/root	usr/share/libinput/30-vendor-ite.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-kensington.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-logitech.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-madcatz.quirks
@@ -60,6 +62,7 @@ drwxr-xr-x	root/root	usr/share/libinput/
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-razer.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-synaptics.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-trust.quirks
+-rw-r--r--	root/root	usr/share/libinput/30-vendor-uniwill.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-vmware.quirks
 -rw-r--r--	root/root	usr/share/libinput/30-vendor-wacom.quirks
 -rw-r--r--	root/root	usr/share/libinput/50-system-acer.quirks

@@ -4,7 +4,7 @@
 # Depends on:	eudev libevdev mtdev
 
 name=libinput
-version=1.25.0
+version=1.26.0
 release=1
 source=(https://gitlab.freedesktop.org/${name}/${name}/-/archive/${version}/${name}-${version}.tar.bz2)
 
