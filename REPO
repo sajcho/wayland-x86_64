@@ -147,8 +147,8 @@ f:26a456a306766d05e342b8560e8784f2:mypaint-brushes/.footprint
 f:e1fdcacf4b3010c480c6a20c7c80c8fa:mypaint-brushes/.signature
 f:ac6abed2b6dfbb4537b338492596caf9:mypaint-brushes/Pkgfile
 f:47759eaf0d40d770fb30965dda252188:glibmm/.footprint
-f:87468692e7358b4cb3801600bdee2438:glibmm/.signature
-f:5ee78d9a52c9e6b974cebceb73cc3f75:glibmm/Pkgfile
+f:3d5de6e5717ad86793f017d48d0f778a:glibmm/.signature
+f:817cadecfafd0f394b0d4a91b2cce74a:glibmm/Pkgfile
 f:ef71f02e58eb7051d5da357d2a6b3249:pixman/.footprint
 f:b005d2f9a1a84b236a9056565bcdc268:pixman/.signature
 f:79b98b217092e43a9e5a26e962fe754a:pixman/Pkgfile
@@ -224,9 +224,9 @@ f:af06452ef2c8f8f4d9b189f69d626327:python3-jinja2/.footprint
 f:39b71e4390257f1fa81a9307089128b4:python3-jinja2/.signature
 f:f42bdef83779016d0b66c12b92e27a08:python3-jinja2/Pkgfile
 f:963db0b198639ef996ab5507ea6659e3:libinput/post-install
-f:4f313da0c75f3483a76cf9c5f1909f72:libinput/.footprint
-f:6f3ebaa9a72c1c85836f9d8c98a08579:libinput/.signature
-f:5e4540dd89851e73d43a13815d3fae2c:libinput/Pkgfile
+f:8cbc06a94c30ef80d2ffdffb4701abe6:libinput/.footprint
+f:cce897b1b8979ba7f84dce88705c0e22:libinput/.signature
+f:b870ce662fd57b897d4eacaa1adcdd37:libinput/Pkgfile
 f:ea79600d22e868d487b6608b246cc9d6:pango/.footprint
 f:20330bcb93ee614cc812f7046182721b:pango/.signature
 f:a5a0744ca82291ca5084ad6bcc9bf47e:pango/Pkgfile
@@ -373,8 +373,8 @@ f:a73c76b58ce320bdc2c96e10e6bea7e6:wf-recorder/.footprint
 f:129490abb7c78c171496cd47f569c25c:wf-recorder/.signature
 f:2cb721d9613d6f7546838045cb3c0050:wf-recorder/Pkgfile
 f:142dda0d582783a893195567fcc087f0:glibmm2.68/.footprint
-f:0762eb6db1959699f26a27ff53446964:glibmm2.68/.signature
-f:2fb752c69df06be7a101ce2de8628a84:glibmm2.68/Pkgfile
+f:a97a7a2d01b2a4d78d6c2ff366d93f7a:glibmm2.68/.signature
+f:b92222754614aceb85345aca7aa79cd3:glibmm2.68/Pkgfile
 f:7b1d297b6c94898a607ed1e9637b2e6b:gtklock/.footprint
 f:f9ed6202e5748fc9734b4dea067c2d55:gtklock/.signature
 f:429b469bb81f8c539e8ab5a58ffe3893:gtklock/Pkgfile
@@ -383,8 +383,8 @@ f:2bff7289929a007c01a25ebd4ce35857:adwaita-icon-theme/.footprint
 f:093128860522336e4516f59743b126a8:adwaita-icon-theme/.signature
 f:1603097e0f33d7b1873cecb18a3d98f9:adwaita-icon-theme/Pkgfile
 f:2a2f6a2d65235673eb3b6cc551c24d6b:atkmm/.footprint
-f:6abfcae7ac1d6bb7fc41ff93c4d55380:atkmm/.signature
-f:513a0e91508840a679121541058d9ace:atkmm/Pkgfile
+f:fe4ac1fc51992930438bb9a7b81167b8:atkmm/.signature
+f:18b6d93e3873fe5c27a100e1224e4090:atkmm/Pkgfile
 f:79148ad3750759c3eec70377437eb123:hicolor-icon-theme/.footprint
 f:d6e632c78d5421f50ec3588b77d3db6e:hicolor-icon-theme/.signature
 f:ef736d9a9f359db0921adaa58df5c367:hicolor-icon-theme/Pkgfile
@@ -423,8 +423,8 @@ f:46bc7bb5f546b8c84b11548e06458bc8:xcb-util/.footprint
 f:76856ae6115bbe13edc605c030ef4a6a:xcb-util/.signature
 f:df3e9cd2bc593945e4805fd7d16500c8:xcb-util/Pkgfile
 f:53ccebcb08176a4f290a5065572ca4ef:atkmm2.36/.footprint
-f:f20593db7eb15630b4974cfc8c739d36:atkmm2.36/.signature
-f:0636cdc7cc43568ba4a24ccad3bfbc4c:atkmm2.36/Pkgfile
+f:87f042450fd85e3a460a8bf9bd3402b1:atkmm2.36/.signature
+f:ed0d17b6e7b79c0b7f4c9b37dec39635:atkmm2.36/Pkgfile
 f:1415335a4ef4398495b620730eff7ab8:xorgproto/.footprint
 f:3e1ffc3c72df5c7c24fd1136c07766ca:xorgproto/.signature
 f:3788d1578d5c5ee407e9529371f2ab2e:xorgproto/Pkgfile
