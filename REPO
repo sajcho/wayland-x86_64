@@ -340,9 +340,9 @@ f:a1cac3b62ea0f2789ff5f178e668da39:gsimplecal/Pkgfile
 f:d1d43bfc03a449d40aee11d1095dbc87:wlrctl/.footprint
 f:8dc1b5537103222c94afdb340a3e9540:wlrctl/.signature
 f:935f28266e5377e9650fbd5913f26c67:wlrctl/Pkgfile
-f:61ef1298b75f03ec2ad34bcd9dd54110:poppler/.footprint
-f:0d1a933390fe889f6659683395fe5327:poppler/.signature
-f:4ae348f7fe6b897de634935a61b5c2ac:poppler/Pkgfile
+f:03d721c88f87b3b76ff5b877ff8bb387:poppler/.footprint
+f:c4b2c05c4d3431b9dcc25ad51c4103bb:poppler/.signature
+f:0541cdd8faf17dd1e4030d064cc4abf8:poppler/Pkgfile
 f:17fae8d0c1b34bf640858462f7f939a6:gimp-devel/.footprint
 f:b391289a33d6c715df88a5e2abd378e7:gimp-devel/.signature
 f:ef5c81d965d95b14bc9ed85deb5dfaf8:gimp-devel/Pkgfile
