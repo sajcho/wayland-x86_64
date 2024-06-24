@@ -4,7 +4,7 @@
 # Depends on:	elfutils libdrm llvm-toolchain lm-sensors python3-mako wayland-protocols
 
 name=mesa
-version=24.1.1
+version=24.1.2
 release=1
 source=(https://archive.mesa3d.org/${name}-${version}.tar.xz \
 	no-unlink-megadrivers.patch)
@@ -24,6 +24,7 @@ build() {
 		-Dvideo-codecs=av1dec,av1enc,h264dec,h264enc,h265dec,h265enc,vc1dec,vp9dec \
 		-Dvulkan-drivers="" \
 		-Dlmsensors=enabled \
+		-Degl=enabled \
 		-Dglx=disabled \
 		-Dlibunwind=disabled \
 		-Dvalgrind=disabled \
