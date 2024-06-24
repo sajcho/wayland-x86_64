@@ -5,7 +5,7 @@
 
 name=river
 version=0.3.3
-release=1
+release=2
 source=(https://codeberg.org/river/river/releases/download/v${version}/${name}-${version}.tar.gz)
 
 build() {
