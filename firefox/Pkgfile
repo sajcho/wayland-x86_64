@@ -4,7 +4,7 @@
 # Depends on:	autoconf-2.13 cbindgen ffmpeg libidl libnotify lld nodejs nss unzip zip
 
 name=firefox
-version=127.0
+version=127.0.1
 release=1
 source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-${version}.source.tar.xz \
 	icu74.patch \
@@ -113,4 +113,8 @@ EOF
 	# Exclude library for revdep.
 	install -d $PKG/etc/revdep.d
 	echo "/usr/lib/firefox/" > $PKG/etc/revdep.d/firefox
+
+	# fix: add firefox.conf to /etc/ld.so.conf.d - requires libxul.so
+	install -d $PKG/etc/ld.so.conf.d
+	echo "/usr/lib/firefox/" > $PKG/etc/ld.so.conf.d/firefox.conf
 }
