@@ -1,11 +1,11 @@
 # Description:	A vector graphics library
 # URL:		https://www.cairographics.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	fontconfig pixman xcb-util glib
+# Depends on:	fontconfig pixman glib
 
 name=cairo
 version=1.18.0
-release=1
+release=2
 source=(https://gitlab.freedesktop.org/${name}/${name}/-/archive/${version}/${name}-${version}.tar.bz2)
 
 build() {
@@ -14,6 +14,7 @@ build() {
 	build-meson \
 		-Dxcb=enabled \
 		-Dtee=enabled \
+		-Dxcb=disabled \
 		-Dxlib=disabled \
 		-Dspectre=disabled \
 		-Dtests=disabled \
