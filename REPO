@@ -322,8 +322,8 @@ f:594a3c7d19c939a051abf93cf0622215:wlroots/.signature
 f:652bde524e93a1e03fc411b74f65e9ce:wlroots/Pkgfile
 f:73472eae5b4777be69fb33cc08441db0:firefox/icu74.patch
 f:cf68e57442271f72b4116d888dbfa614:firefox/.footprint
-f:f109bcfb578e141711538ba05b3c3ebc:firefox/.signature
-f:9ae9e3d4b338df44ed9a26a1dc7b54dd:firefox/Pkgfile
+f:49f10bdc573c00f39aaab39386059275:firefox/.signature
+f:acf107b3e2ad8e5c025604c1f70e893c:firefox/Pkgfile
 f:2b9c0c88200fa4a33a2dc2f9cf15dcea:firefox/firefox.desktop
 f:44e469b11796500b6a9462e59bdd6137:libsecret/.footprint
 f:ee7978e5ee17625b865f60d049b699f1:libsecret/.signature
