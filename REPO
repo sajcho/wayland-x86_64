@@ -185,8 +185,8 @@ f:b44c272fc566625029e31cba34a43f7b:swaylockd/.footprint
 f:91f26945f69c3463367f00014d1a4c88:swaylockd/.signature
 f:16410058dbd89ec0a6fc0c2e276be67f:swaylockd/Pkgfile
 f:05398125691a30dd584b48561169795e:libxkbcommon/.footprint
-f:24b6bf3b076362a592975ad3a58c8034:libxkbcommon/.signature
-f:8cd3af19414758bce0638b37d1f341a9:libxkbcommon/Pkgfile
+f:871cb2eb4b286f4d62e728a13847441c:libxkbcommon/.signature
+f:b9dac9c1c1d46db726b725e9a4f1ef8f:libxkbcommon/Pkgfile
 f:cd5431e13f45d80f4b649d093055129d:wxwidgets/.footprint
 f:cf69112a0491078114dfc6c77b579790:wxwidgets/.signature
 f:7657514214e3b80ae4b088124662afcd:wxwidgets/Pkgfile
