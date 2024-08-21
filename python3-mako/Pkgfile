@@ -1,0 +1,18 @@
+# Description:	Python3 fast templating language
+# URL:		https://www.makotemplates.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-markupsafe
+
+name=python3-mako
+_realname=Mako
+version=1.3.5
+release=1
+source=(https://files.pythonhosted.org/packages/source/M/Mako/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	gpep517 build-wheel --wheel-dir .dist --output-fd 3 3>&1 >&2
+
+	python3 -m installer -d $PKG .dist/*.whl
+}

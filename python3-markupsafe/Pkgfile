@@ -1,0 +1,20 @@
+# Description:	Implements a XML/HTML/XHTML Markup safe string
+# URL:		https://github.com/mitsuhiko/markupsafe
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-gpep517 python3-setuptools python3-wheel
+
+name=python3-markupsafe
+_realname=MarkupSafe
+version=2.1.5
+release=1
+source=(https://files.pythonhosted.org/packages/source/M/MarkupSafe/$_realname-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	gpep517 build-wheel --wheel-dir .dist --output-fd 3 3>&1 >&2
+
+	python3 -m installer -d $PKG .dist/*.whl
+
+	find $PKG -name "*.c" -delete
+}

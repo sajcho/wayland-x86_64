@@ -1,0 +1,18 @@
+# Description:	A small but fast and easy to use stand-alone python template engine
+# URL:		https://palletsprojects.com/p/jinja/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-flit-core python3-gpep517 python3-markupsafe python3-wheel
+
+name=python3-jinja2
+_realname=jinja2
+version=3.1.4
+release=1
+source=(https://files.pythonhosted.org/packages/source/j/jinja2/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	gpep517 build-wheel --wheel-dir .dist --output-fd 3 3>&1 >&2
+
+	python3 -m installer -d $PKG .dist/*.whl
+}
