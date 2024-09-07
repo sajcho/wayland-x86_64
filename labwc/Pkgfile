@@ -4,15 +4,12 @@
 # Depends on:	cairo glib libinput librsvg libxml2 meson pango scdoc wayland-protocols wlroots
 
 name=labwc
-version=0.7.1
-_commit=4fc6bce3ea9f6d08b6efd6c022bea5030e543c06
-# Author: Johan Malm <jgm323@gmail.com>
-# Date:   Sun Mar 24 19:31:29 2024 +0000
+version=0.8.0
 release=1
-source=(https://github.com/labwc/labwc/archive/${_commit}/${name}-${_commit}.tar.gz)
+source=(https://github.com/labwc/labwc/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
-	cd ${name}-${_commit}
+	cd ${name}-${version}
 
 	build-meson . build
 

@@ -14,6 +14,7 @@ drwxr-xr-x	root/root	usr/share/labwc/
 -rw-r--r--	root/root	usr/share/labwc/menu.xml
 -rw-r--r--	root/root	usr/share/labwc/rc.xml
 -rw-r--r--	root/root	usr/share/labwc/rc.xml.all
+-rw-r--r--	root/root	usr/share/labwc/shutdown
 -rw-r--r--	root/root	usr/share/labwc/themerc
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
