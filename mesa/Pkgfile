@@ -1,30 +1,25 @@
 # Description:	Mesa DRI OpenGL library - release
 # URL:		http://www.mesa3d.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	elfutils libdrm llvm-toolchain lm-sensors python3-mako wayland-protocols
+# Depends on:	elfutils libdrm libglvnd llvm-toolchain lm-sensors python3-mako python3-yaml wayland-protocols
 
 name=mesa
-version=24.1.2
+version=24.2.2
 release=1
-source=(https://archive.mesa3d.org/${name}-${version}.tar.xz \
-	no-unlink-megadrivers.patch)
+source=(https://archive.mesa3d.org/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	# from alpine linux:
-	# this converts megadriver installation to use symlinks instead of hardlinks,
-	# and simplifies disk representation (hardlinks are less easy to see)
-
-	patch -p1 -i $SRC/no-unlink-megadrivers.patch
-
 	build-meson \
 		-Dplatforms=wayland \
-		-Dgallium-drivers=r300,r600,radeonsi,swrast,nouveau,panfrost \
+		-Dgallium-drivers=r300,r600,radeonsi,nouveau,panfrost,softpipe,llvmpipe,virgl \
 		-Dvideo-codecs=av1dec,av1enc,h264dec,h264enc,h265dec,h265enc,vc1dec,vp9dec \
 		-Dvulkan-drivers="" \
 		-Dlmsensors=enabled \
 		-Degl=enabled \
+		-Dglvnd=enabled \
+		-Dopengl=true \
 		-Dglx=disabled \
 		-Dlibunwind=disabled \
 		-Dvalgrind=disabled \
