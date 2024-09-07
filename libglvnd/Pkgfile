@@ -1,0 +1,23 @@
+# Description:	The GL Vendor-Neutral Dispatch library
+# URL:		https://github.com/NVIDIA/libglvnd
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libglvnd
+version=1.7.0
+release=1
+source=(https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v${version}/${name}-v${version}.tar.gz)
+
+build() {
+	cd ${name}-v${version}
+
+	build-meson \
+		-Degl=true \
+		-Dgles1=false \
+		-Dglx=disabled \
+		-Dx11=disabled \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
