@@ -4,8 +4,8 @@
 # Depends on:	libcap libdisplay-info libliftoff libxkbcommon pixman seatd
 
 name=wlroots
-version=0.17.3
-release=2
+version=0.18.0
+release=1
 source=(https://gitlab.freedesktop.org/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
