@@ -1,6 +1,5 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/NemarG5HpMEw447YxtQrd5j5bMNAaVOV0NBbD0vUY0xpIriS+p+cEKa3mCuyEQWt5rUU+Fn1BlkoSSS0hGMGU2SCgY=
-SHA256 (Pkgfile) = 299f3999e603759be227d2dd77242e21448b0d596948ef62ba906503794b5bde
+RWQLTWOc/NemamYUbmM/J1/g9aXhdO9pOXDGN4MpaK5Dg/X6j0k4ojpOulAFzFsfxUXpUKbanAQ7hOSmM9xSYM92Nvb+xjjJSAw=
+SHA256 (Pkgfile) = 653ef70905451dfc9e5e850793fc8974c7badacf6dda5b247cb90f95a87a7e47
 SHA256 (.footprint) = 7c94f0b49269a2ee6586c1a5d7d66c9847e702b724fd4e05fdde35df5e267cae
-SHA256 (wf-recorder-0.4.1.tar.xz) = 502ba54db8aaf5ebd280738f065c73409694a1440b9a660ef5c4e398714c51f7
-SHA256 (ffmpeg-7.patch) = a3542558964c088cd88da521aaa4708b9cb8246803dd8a6367dff25b9c4b3f40
+SHA256 (wf-recorder-0.5.0.tar.xz) = 50b30569f9ecf4f6ba5ba76c422b7af652b4fbc7cae86c25e19ecbe669fca327
