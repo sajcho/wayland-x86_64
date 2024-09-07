@@ -4,8 +4,8 @@
 # Depends on:	git libevdev libxkbcommon pixman scdoc wayland-protocols wlroots zig
 
 name=river
-version=0.3.3
-release=2
+version=0.3.5
+release=1
 source=(https://codeberg.org/river/river/releases/download/v${version}/${name}-${version}.tar.gz)
 
 build() {
