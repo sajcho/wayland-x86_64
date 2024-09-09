@@ -1,6 +1,6 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/NemakrvoohvsJBeRUSl233lmdkU85yJCHHM2ld+2PBOSgWNkzqE3PEDDqqas7p00gzwdS8nfxPlOpgNaq3CpGNN9Ao=
-SHA256 (Pkgfile) = b77532203e06563e1685ca12a426c9d688059c46b94b519e6c069a2cfb960d8b
-SHA256 (.footprint) = 1f6fad0b8bb9e2971e0111a3f0de36c5f6cbbd986d851d5b3adda68a9fb79d84
-SHA256 (wayland-1.23.0.tar.xz) = 05b3e1574d3e67626b5974f862f36b5b427c7ceeb965cb36a4e6c2d342e45ab2
+RWQLTWOc/NemaupXTZDL3U8N9P9yU2Ut7UzYbGS3VGsBzYZWfSTluK74iM5Wc/P9lxcJlMS3RuaXFXZJIC1tgpJeYB01GsJqsA8=
+SHA256 (Pkgfile) = 68e4faf7d54828eafe251fc8d0cc19cf9b2247aaf55db01450ac59ba126441eb
+SHA256 (.footprint) = 545c8eac6ea5d5795300c61ade4a10329eca51593508d6be8bcd41d457bb8e68
+SHA256 (wayland-1.23.1.tar.xz) = 864fb2a8399e2d0ec39d56e9d9b753c093775beadc6022ce81f441929a81e5ed
 SHA256 (tests-ignore-debugger.patch) = 8d4067ff74854c1be8c4dbd2e497c7978d870e85e2de2efaf618db81b2f08b83
