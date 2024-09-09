@@ -1,7 +1,7 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/NemapD9wJFZRaDsf4SihpGkqEZglf8Zt9Q6TLA75PiVetvXXzewhYW+H3XSMSh22qSaMNEzuz8al+//XDLCMLTOBA0=
-SHA256 (Pkgfile) = e49b7184e6ccdf5fc7826fcfad0b453646a7460bee29af18408b3e41ae714327
+RWQLTWOc/Nematwi5jGrlaVeeN0q0EXAqvCNojfZNOfyoWMNyCp7OwUq8fFBkDJkq99UUon02PidY2vSVZfWkKbLKaJy2woODAY=
+SHA256 (Pkgfile) = 71e2eaa66b8f30ca370ec4f5cbadc469531d02d5da0257a3bcf8e6e6f86a858d
 SHA256 (.footprint) = a3aa7106197d137f88ad37b4c727e24936a958fe0cb8e8bdad0ec07cb9773912
-SHA256 (firefox-127.0.2.source.tar.xz) = 0b7b2a8c3def52fcab13c48769645d0e963902ee916e4f3d2a0098796e73e3e8
+SHA256 (firefox-130.0.source.tar.xz) = 0c12852a502c9ceefc11003416057917466d8788dd8780931ea387b0b137b567
 SHA256 (icu74.patch) = 83f4ea4cb5b89f81bfc9f42cc3d3f16e4df8bf3a2c9f0c27e90032c759a2ab86
 SHA256 (firefox.desktop) = 4460566279ad520ac885d2bd651cbca58461baec3e5bb1aeb75fa48b9de64dff
