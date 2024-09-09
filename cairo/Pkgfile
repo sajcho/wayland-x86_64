@@ -4,8 +4,8 @@
 # Depends on:	fontconfig pixman glib
 
 name=cairo
-version=1.18.0
-release=2
+version=1.18.2
+release=1
 source=(https://gitlab.freedesktop.org/${name}/${name}/-/archive/${version}/${name}-${version}.tar.bz2)
 
 build() {
