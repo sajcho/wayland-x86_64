@@ -122,9 +122,10 @@ f:1de81ba807e7f08d22445c4c6d3cdd76:python3-mako/.footprint
 f:c47c263339c16a8e88ada39ea690d1f1:python3-mako/.signature
 f:1e48d0f974c0bed83e41559330f8e9c9:python3-mako/Pkgfile
 f:8cb2343ea14320fc2ed055b7214c2ec5:giflib/giflib-5.2.2-upstream_fixes-1.patch
+f:1a736e9859d8ffdbdaa7524aa3943b54:giflib/dont-build-html-pages-images.patch
 f:124aa7275358c4e79e15e2d5b63f6b37:giflib/.footprint
-f:96fa447420633833e63563834562bd4e:giflib/.signature
-f:a16fb618dcd12695d7f47a875bc394ea:giflib/Pkgfile
+f:7d5fe424df57d415eecbfddf51d6a63d:giflib/.signature
+f:3e4d3b6b617305046f86ac8fd993e077:giflib/Pkgfile
 f:16e733cbe41f2234f2b92c34eeb1288c:slurp/.footprint
 f:5ec3f54f7d034ae7132e9705098520eb:slurp/.signature
 f:70a4748db8696c1b1ce868c76f3ccc13:slurp/Pkgfile
