@@ -276,8 +276,8 @@ f:d768b83f32c66c7f8facbb6591ea5279:wayland-utils/Pkgfile
 f:269d983aaad997b30fc3f1a17c7c0a29:fontconfig/fonts.conf
 f:e3144b54cf4de7faa73c59a6df217f41:fontconfig/post-install
 f:0aec944ee69a9e36fa09f94572637126:fontconfig/.footprint
-f:b580aa00bfcda8ab5467e016f40a6642:fontconfig/.signature
-f:190eb45e0a1e4c6b383a7b8a59e7517a:fontconfig/Pkgfile
+f:5e6dc564fed7d0ad70783298b8dd6644:fontconfig/.signature
+f:17b13d98ee6ec655c58dcd9c4b0d88b1:fontconfig/Pkgfile
 f:5de10d632120b09be9a1b467f20c983e:fontconfig/README
 f:236a71a43388357baaca0c904eb2ff9b:at-spi2-core/.footprint
 f:949bfcad1aeef6a3a57339ddbfdd6fa6:at-spi2-core/.signature
