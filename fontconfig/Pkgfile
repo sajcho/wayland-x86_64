@@ -5,12 +5,15 @@
 
 name=fontconfig
 version=2.15.0
-release=1
+release=2
 source=(https://www.freedesktop.org/software/${name}/release/${name}-${version}.tar.xz \
 	fonts.conf)
 
 build() {
 	cd ${name}-${version}
+
+	cp -v /usr/share/automake-1.17/config.{guess,sub} \
+		$SRC/${name}-${version}/
 
 	./configure \
 		--build=$CHOST \
