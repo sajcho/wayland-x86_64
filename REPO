@@ -219,8 +219,8 @@ f:723d58ffd89706a8497f8aac79188107:libinput/.footprint
 f:6d24b5ed640e1aaef0379fc19acd9817:libinput/.signature
 f:a864b92d3d018a17d20fc211f4bc90d9:libinput/Pkgfile
 f:4771a9b43676d6542dc562e98f162bbf:pango/.footprint
-f:36e0d53df382ce40866f06adf6cfe4f5:pango/.signature
-f:83db419fbc45fe1c7a59c32262dd2495:pango/Pkgfile
+f:b49b35ddc6341ad88a0a870596f40132:pango/.signature
+f:c72ef417b7682add102d42980ce716ff:pango/Pkgfile
 f:592a91b3fd927037bd7f2e40d2262cf5:gtkmm3/.footprint
 f:2acb565e383a625ad03baa2dc9f9eccc:gtkmm3/.signature
 f:876bfa5b5075f63046123e6ffb889725:gtkmm3/Pkgfile
