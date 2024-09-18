@@ -4,14 +4,16 @@
 
 name=giflib
 version=5.2.2
-release=1
+release=2
 source=(http://download.sourceforge.net/${name}/${name}-${version}.tar.gz \
-	giflib-5.2.2-upstream_fixes-1.patch)
+	giflib-5.2.2-upstream_fixes-1.patch \
+	dont-build-html-pages-images.patch)
 
 build() {
 	cd ${name}-${version}
 
 	patch -p1 -i $SRC/giflib-5.2.2-upstream_fixes-1.patch
+	patch -p1 -i $SRC/dont-build-html-pages-images.patch
 
 	make V=1
 

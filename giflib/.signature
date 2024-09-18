@@ -1,6 +1,7 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/NemarMQULjrKNd72+pV7uLY39VOLdbApybjazSC+eAXLqINa56X4PPPt5xn94h8xe/42AHJlUKaxvlv2v60mFNUuw8=
-SHA256 (Pkgfile) = d5f532440fa06b8ab75fc5340d314498bba6737946ca5695fbf3f6cb9ffc2627
+RWQLTWOc/NemarZZmS/3p4BjRNvZOZ8JagnzNGhNQ04s3Qlm+ctRH4irH7ZPJDRoOGDq0CVaoQ4+Qhrpcth+F4zhKjkguvUi5gE=
+SHA256 (Pkgfile) = efe1fc75f5c29534602adeb8f49c8cb6a91f38d08e454c35757df05d109ffb4d
 SHA256 (.footprint) = 969ab64383aeac70accafbbd0585ff7bf50e07b7170381d0805c94bb77ee1683
 SHA256 (giflib-5.2.2.tar.gz) = be7ffbd057cadebe2aa144542fd90c6838c6a083b5e8a9048b8ee3b66b29d5fb
 SHA256 (giflib-5.2.2-upstream_fixes-1.patch) = 132393df869f91c9ff626bc3c0fbb7b8ed74fc93f543aec56c5edad21f56743d
+SHA256 (dont-build-html-pages-images.patch) = 86a84ff0df80b5c89ac637b674fc47e2050a265776861bf7006b1c0954555f21
