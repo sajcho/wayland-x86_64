@@ -1,5 +1,31 @@
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/amdgpu_stress
+-rwxr-xr-x	root/root	usr/bin/drmdevice
+-rwxr-xr-x	root/root	usr/bin/etnaviv_2d_test
+-rwxr-xr-x	root/root	usr/bin/etnaviv_bo_cache_test
+-rwxr-xr-x	root/root	usr/bin/etnaviv_cmd_stream_test
+-rwxr-xr-x	root/root	usr/bin/exynos_fimg2d_event
+-rwxr-xr-x	root/root	usr/bin/exynos_fimg2d_perf
+-rwxr-xr-x	root/root	usr/bin/exynos_fimg2d_test
+-rwxr-xr-x	root/root	usr/bin/modeprint
+-rwxr-xr-x	root/root	usr/bin/modetest
+-rwxr-xr-x	root/root	usr/bin/proptest
+-rwxr-xr-x	root/root	usr/bin/tegra-gr2d-fill
+-rwxr-xr-x	root/root	usr/bin/tegra-openclose
+-rwxr-xr-x	root/root	usr/bin/tegra-syncpt-timeout
+-rwxr-xr-x	root/root	usr/bin/tegra-syncpt-wait
+-rwxr-xr-x	root/root	usr/bin/tegra-vic-blit
+-rwxr-xr-x	root/root	usr/bin/tegra-vic-clear
+-rwxr-xr-x	root/root	usr/bin/tegra-vic-flip
+-rwxr-xr-x	root/root	usr/bin/vbltest
 drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/exynos/
+-rw-r--r--	root/root	usr/include/exynos/exynos_drm.h
+-rw-r--r--	root/root	usr/include/exynos/exynos_fimg2d.h
+drwxr-xr-x	root/root	usr/include/freedreno/
+-rw-r--r--	root/root	usr/include/freedreno/freedreno_drmif.h
+-rw-r--r--	root/root	usr/include/freedreno/freedreno_ringbuffer.h
 drwxr-xr-x	root/root	usr/include/libdrm/
 -rw-r--r--	root/root	usr/include/libdrm/amdgpu.h
 -rw-r--r--	root/root	usr/include/libdrm/amdgpu_drm.h
@@ -7,6 +33,8 @@ drwxr-xr-x	root/root	usr/include/libdrm/
 -rw-r--r--	root/root	usr/include/libdrm/drm_fourcc.h
 -rw-r--r--	root/root	usr/include/libdrm/drm_mode.h
 -rw-r--r--	root/root	usr/include/libdrm/drm_sarea.h
+-rw-r--r--	root/root	usr/include/libdrm/etnaviv_drmif.h
+-rw-r--r--	root/root	usr/include/libdrm/exynos_drmif.h
 -rw-r--r--	root/root	usr/include/libdrm/i915_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/mach64_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/mga_drm.h
@@ -22,6 +50,7 @@ drwxr-xr-x	root/root	usr/include/libdrm/nouveau/nvif/
 -rw-r--r--	root/root	usr/include/libdrm/nouveau/nvif/ioctl.h
 -rw-r--r--	root/root	usr/include/libdrm/nouveau/nvif/unpack.h
 -rw-r--r--	root/root	usr/include/libdrm/nouveau_drm.h
+-rw-r--r--	root/root	usr/include/libdrm/omap_drmif.h
 -rw-r--r--	root/root	usr/include/libdrm/qxl_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/r128_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/r600_pci_ids.h
@@ -35,12 +64,17 @@ drwxr-xr-x	root/root	usr/include/libdrm/nouveau/nvif/
 -rw-r--r--	root/root	usr/include/libdrm/radeon_surface.h
 -rw-r--r--	root/root	usr/include/libdrm/savage_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/sis_drm.h
+-rw-r--r--	root/root	usr/include/libdrm/tegra.h
 -rw-r--r--	root/root	usr/include/libdrm/tegra_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/vc4_drm.h
+-rw-r--r--	root/root	usr/include/libdrm/vc4_packet.h
+-rw-r--r--	root/root	usr/include/libdrm/vc4_qpu_defines.h
 -rw-r--r--	root/root	usr/include/libdrm/via_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/virtgpu_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/vmwgfx_drm.h
 -rw-r--r--	root/root	usr/include/libsync.h
+drwxr-xr-x	root/root	usr/include/omap/
+-rw-r--r--	root/root	usr/include/omap/omap_drm.h
 -rw-r--r--	root/root	usr/include/xf86drm.h
 -rw-r--r--	root/root	usr/include/xf86drmMode.h
 drwxr-xr-x	root/root	usr/lib/
@@ -50,17 +84,38 @@ lrwxrwxrwx	root/root	usr/lib/libdrm.so.2 -> libdrm.so.2.123.0
 lrwxrwxrwx	root/root	usr/lib/libdrm_amdgpu.so -> libdrm_amdgpu.so.1
 lrwxrwxrwx	root/root	usr/lib/libdrm_amdgpu.so.1 -> libdrm_amdgpu.so.1.123.0
 -rwxr-xr-x	root/root	usr/lib/libdrm_amdgpu.so.1.123.0
+lrwxrwxrwx	root/root	usr/lib/libdrm_etnaviv.so -> libdrm_etnaviv.so.1
+lrwxrwxrwx	root/root	usr/lib/libdrm_etnaviv.so.1 -> libdrm_etnaviv.so.1.123.0
+-rwxr-xr-x	root/root	usr/lib/libdrm_etnaviv.so.1.123.0
+lrwxrwxrwx	root/root	usr/lib/libdrm_exynos.so -> libdrm_exynos.so.1
+lrwxrwxrwx	root/root	usr/lib/libdrm_exynos.so.1 -> libdrm_exynos.so.1.123.0
+-rwxr-xr-x	root/root	usr/lib/libdrm_exynos.so.1.123.0
+lrwxrwxrwx	root/root	usr/lib/libdrm_freedreno.so -> libdrm_freedreno.so.1
+lrwxrwxrwx	root/root	usr/lib/libdrm_freedreno.so.1 -> libdrm_freedreno.so.1.123.0
+-rwxr-xr-x	root/root	usr/lib/libdrm_freedreno.so.1.123.0
 lrwxrwxrwx	root/root	usr/lib/libdrm_nouveau.so -> libdrm_nouveau.so.2
 lrwxrwxrwx	root/root	usr/lib/libdrm_nouveau.so.2 -> libdrm_nouveau.so.2.123.0
 -rwxr-xr-x	root/root	usr/lib/libdrm_nouveau.so.2.123.0
+lrwxrwxrwx	root/root	usr/lib/libdrm_omap.so -> libdrm_omap.so.1
+lrwxrwxrwx	root/root	usr/lib/libdrm_omap.so.1 -> libdrm_omap.so.1.123.0
+-rwxr-xr-x	root/root	usr/lib/libdrm_omap.so.1.123.0
 lrwxrwxrwx	root/root	usr/lib/libdrm_radeon.so -> libdrm_radeon.so.1
 lrwxrwxrwx	root/root	usr/lib/libdrm_radeon.so.1 -> libdrm_radeon.so.1.123.0
 -rwxr-xr-x	root/root	usr/lib/libdrm_radeon.so.1.123.0
+lrwxrwxrwx	root/root	usr/lib/libdrm_tegra.so -> libdrm_tegra.so.0
+lrwxrwxrwx	root/root	usr/lib/libdrm_tegra.so.0 -> libdrm_tegra.so.0.123.0
+-rwxr-xr-x	root/root	usr/lib/libdrm_tegra.so.0.123.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_amdgpu.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_etnaviv.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_exynos.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_freedreno.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_nouveau.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_omap.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_radeon.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_tegra.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_vc4.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/libdrm/
 -rw-r--r--	root/root	usr/share/libdrm/amdgpu.ids
