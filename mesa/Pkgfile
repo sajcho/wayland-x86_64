@@ -1,19 +1,26 @@
 # Description:	Mesa DRI OpenGL library - release
-# URL:		http://www.mesa3d.org
+# URL:		https://gitlab.freedesktop.org/mesa/mesa
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	elfutils libdrm libglvnd llvm-toolchain lm-sensors python3-mako python3-yaml wayland-protocols
+# Depends on:	elfutils libdrm libglvnd llvm-toolchain lm-sensors python3-cparser python3-mako python3-yaml wayland-protocols
 
 name=mesa
-version=24.2.2
+version=24.2.3
 release=1
-source=(https://archive.mesa3d.org/${name}-${version}.tar.xz)
+source=(https://archive.mesa3d.org/${name}-${version}.tar.xz \
+	23630.patch \
+	29401.patch \
+	riscv64-tls.patch)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/23630.patch
+	patch -p1 -i $SRC/29401.patch
+	patch -p1 -i $SRC/riscv64-tls.patch
+
 	build-meson \
 		-Dplatforms=wayland \
-		-Dgallium-drivers=r300,r600,radeonsi,nouveau,panfrost,softpipe,llvmpipe,virgl \
+		-Dgallium-drivers=r300,r600,radeonsi,nouveau,softpipe,llvmpipe,v3d,vc4,freedreno,lima,panfrost,etnaviv,tegra,virgl,zink \
 		-Dvideo-codecs=av1dec,av1enc,h264dec,h264enc,h265dec,h265enc,vc1dec,vp9dec \
 		-Dvulkan-drivers="" \
 		-Dlmsensors=enabled \
