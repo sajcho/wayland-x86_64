@@ -1,4 +1,5 @@
 d:libglvnd
+d:python3-cparser
 d:swaybg
 d:wayland
 d:gtk3
@@ -96,6 +97,9 @@ d:appstream-glib
 f:3a4b6204f2647710d0c35a78a261c834:libglvnd/.footprint
 f:054b33dfe4485fee70a767c5e767d5c3:libglvnd/.signature
 f:634b5386c9684f10277f73a9811256a7:libglvnd/Pkgfile
+f:9a15e428c54245a6c87166a5c2d422dc:python3-cparser/.footprint
+f:f02fb8cfcb20ca636e54ccd71bb53be1:python3-cparser/.signature
+f:70353b1bd41cb7a7164a8673fccfad5b:python3-cparser/Pkgfile
 f:5a87b970907bca8f785b783e2a6e6f21:swaybg/.footprint
 f:d4e2317b5b560844738a33904e7b53b1:swaybg/.signature
 f:5e816affb24ad5733efc43230149e72c:swaybg/Pkgfile
@@ -137,9 +141,12 @@ f:69e07b8b7baaa37b34802b5d11a6f0f8:desktop-file-utils/post-install
 f:d3512ed058cc2237156fb5ac8c01978d:desktop-file-utils/.footprint
 f:98934ddc954d5d36b38e5d1a4ea10e85:desktop-file-utils/.signature
 f:9b140e5d9689c30e87a7ef69fd9c517a:desktop-file-utils/Pkgfile
-f:65ee3f047fd72067a03e7b2a30a509d1:mesa/.footprint
-f:cdb6a3ccecae5ab32f83d10dfa73b227:mesa/.signature
-f:70d722820b68dc2af5c1e1b7b855944b:mesa/Pkgfile
+f:acaf67857351df98d9228b5d7eb5a049:mesa/29401.patch
+f:dfb42182f139ab5a33899921cc4475db:mesa/23630.patch
+f:c934a268ee0990d6d66ab935c249c917:mesa/.footprint
+f:874d69f66ac0b51ba5dfd06d262491e7:mesa/.signature
+f:22542eb7d9a4395795e551517ca4ff49:mesa/riscv64-tls.patch
+f:24b6f3dc6016c8236295da72be6d1e75:mesa/Pkgfile
 f:26a456a306766d05e342b8560e8784f2:mypaint-brushes/.footprint
 f:e1fdcacf4b3010c480c6a20c7c80c8fa:mypaint-brushes/.signature
 f:ac6abed2b6dfbb4537b338492596caf9:mypaint-brushes/Pkgfile
@@ -175,9 +182,9 @@ f:ba78d6e64bb64cf3d3006a409585fd5c:wayidle/Pkgfile
 f:676cf3079c895036cc7a9d0d25a86b75:wayland-protocols/.footprint
 f:a3ee759e3cee76a8fe0ee8138f6b8386:wayland-protocols/.signature
 f:2cbb404834a33b443e0373eec6089a5d:wayland-protocols/Pkgfile
-f:a06ccf12bbf4223db05b55d2bf18f04d:libdrm/.footprint
-f:60451fd3265fbe6b030d83baa311b6e4:libdrm/.signature
-f:57d1eb86ab35ecba4b378239b01e88d1:libdrm/Pkgfile
+f:cbe2e5c5990c4ab0b2e1cf564003f804:libdrm/.footprint
+f:9bc2bb2215016ccfc09529e86712a7c3:libdrm/.signature
+f:e769f03b54dc8fa7fd8f5fd56d2db445:libdrm/Pkgfile
 f:4f88955aa2d2bad1bd981071d8fe49a3:wl-clipboard/.footprint
 f:04c1c6bfad876ee6b38dac7c840b4cc7:wl-clipboard/.signature
 f:15992ee4570bfacd1389a869457b5b83:wl-clipboard/Pkgfile
