@@ -1,0 +1,18 @@
+# Description:	C parser written in Python3
+# URL:		https://github.com/eliben/pycparser
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-setuptools python3-wheel
+
+name=python3-cparser
+_realname=pycparser
+version=2.22
+release=1
+source=(https://files.pythonhosted.org/packages/source/p/pycparser/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	gpep517 build-wheel --wheel-dir .dist --output-fd 3 3>&1 >&2
+
+	python3 -m installer -d $PKG .dist/*.whl
+}
