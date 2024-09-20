@@ -1,11 +1,11 @@
 # Description:	Firefox web browser
 # URL:		https://www.firefox.com/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	autoconf-2.13 cbindgen ffmpeg libidl libnotify lld nodejs nss unzip zip
+# Depends on:	autoconf-2.13 cbindgen ffmpeg libidl libnotify lld nodejs-lts nss unzip zip
 
 name=firefox
 version=130.0
-release=1
+release=2
 source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-${version}.source.tar.xz \
 	icu74.patch \
 	firefox.desktop)
