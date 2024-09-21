@@ -4,7 +4,7 @@
 # Depends on:	gtk3
 
 name=gtk-layer-shell
-version=0.8.2
+version=0.9.0
 release=1
 source=(https://github.com/wmww/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
@@ -12,8 +12,8 @@ build() {
 	cd ${name}-${version}
 
 	build-meson \
-		-Dexamples=true \
-		-Dtests=true \
+		-Dexamples=false \
+		-Dtests=false \
 		-Ddocs=false \
 		-Dvapi=false \
 		. build
