@@ -1,5 +1,5 @@
 untrusted comment: verify with wayland-x86_64.pub
-RWQLTWOc/Nemaj5aUvx8YWiIg8tiw4KbDLOpQMo0PlbrZzs+xqVhmwkF29jbvTWk6jpQbQ//acVnXaBq8Uwq5fH0YN37P2YZ3QM=
-SHA256 (Pkgfile) = e854aa48f4257110cb20d3e419eef44bb49ac599aa3b981b1ae6c18629a0c10e
-SHA256 (.footprint) = 09905e7bf71027f27b99d1132116e47eb6726c7776325b6347917cb3a880d256
-SHA256 (at-spi2-core-2.52.0.tar.xz) = 0ac3fc8320c8d01fa147c272ba7fa03806389c6b03d3c406d0823e30e35ff5ab
+RWQLTWOc/Nemaicpy7wFqW8xyAPjazIpeZ/OrMwCUezctI1vRAyFYGUsmC/QL/KV2cr3MHk4uShKnWmqQpLUchVTif5SzYpW8g8=
+SHA256 (Pkgfile) = 48ab7cde699a86ea5fea5fdb71b654a2ccad7aa468edb2844d74a13e8e9b8871
+SHA256 (.footprint) = 9417f499adfde4dab5cb6ccb25733bb7246a3d5fc43dbae59b580cc0541e862b
+SHA256 (at-spi2-core-2.54.0.tar.xz) = d7eee7e75beddcc272cedc2b60535600f3aae6e481589ebc667afc437c0a6079
