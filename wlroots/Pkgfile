@@ -1,10 +1,10 @@
 # Description:	Modular Wayland compositor library
 # URL:		https://gitlab.freedesktop.org/wlroots/wlroots
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libcap libdisplay-info libliftoff libxkbcommon pixman seatd
+# Depends on:	libcap libdisplay-info libinput libliftoff libxkbcommon pixman seatd
 
 name=wlroots
-version=0.18.0
+version=0.18.1
 release=1
 source=(https://gitlab.freedesktop.org/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz)
 
