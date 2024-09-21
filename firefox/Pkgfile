@@ -4,8 +4,8 @@
 # Depends on:	autoconf-2.13 cbindgen ffmpeg libidl libnotify lld nodejs-lts nss unzip zip
 
 name=firefox
-version=130.0
-release=2
+version=130.0.1
+release=1
 source=(https://ftp.mozilla.org/pub/firefox/releases/${version}/source/${name}-${version}.source.tar.xz \
 	icu74.patch \
 	firefox.desktop)
