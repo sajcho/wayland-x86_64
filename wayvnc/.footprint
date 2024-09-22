@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/wayvnc
+-rwxr-xr-x	root/root	usr/bin/wayvncctl
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/wayvnc.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/wayvncctl.1.gz

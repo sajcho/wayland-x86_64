@@ -1,0 +1,19 @@
+# Description:	A VNC server for wlroots-based Wayland compositors
+# URL:		https://github.com/any1/wayvnc
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	jansson libuv libxkbcommon meson neatvnc scdoc wayland
+
+name=wayvnc
+version=0.8.0
+release=1
+source=(https://github.com/any1/wayvnc/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
