@@ -1,0 +1,18 @@
+# Description:	Andri's Main Loop
+# URL:		https://github.com/any1/aml
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=aml
+version=0.3.0
+release=1
+source=(https://github.com/any1/aml/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
