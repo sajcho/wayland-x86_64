@@ -22,6 +22,7 @@ d:river
 d:filezilla
 d:libnotify
 d:wayidle
+d:neatvnc
 d:wayland-protocols
 d:libdrm
 d:wl-clipboard
@@ -49,10 +50,12 @@ d:fcft
 d:autoconf-2.13
 d:libevdev
 d:yambar
+d:aml
 d:cairomm1.16
 d:gtk-session-lock
 d:babl
 d:wlr-randr
+d:wayvnc
 d:wayland-utils
 d:fontconfig
 d:at-spi2-core
@@ -179,6 +182,9 @@ f:67b0238c36cbf8cd70e3122d65fbc5d8:libnotify/Pkgfile
 f:b9bca123952b97715cbeac1a1cfcb497:wayidle/.footprint
 f:30feb0c68fa05ee291de3d7e3af4b31b:wayidle/.signature
 f:ba78d6e64bb64cf3d3006a409585fd5c:wayidle/Pkgfile
+f:93a0205d323b9b9f6aae5afcdb7f4119:neatvnc/.footprint
+f:19c6923cda3cf0dab2f31e6931797e68:neatvnc/.signature
+f:77417dec8c6e62021c95fe390f311af8:neatvnc/Pkgfile
 f:676cf3079c895036cc7a9d0d25a86b75:wayland-protocols/.footprint
 f:a3ee759e3cee76a8fe0ee8138f6b8386:wayland-protocols/.signature
 f:2cbb404834a33b443e0373eec6089a5d:wayland-protocols/Pkgfile
@@ -265,6 +271,9 @@ f:567cff94e79f42789f4eb18e25d1876f:libevdev/Pkgfile
 f:69d70ba404ae6bd39db615aa84a8fee3:yambar/.footprint
 f:a10c02f00904ca120c2064be9637f6f8:yambar/.signature
 f:c25f33dada76e54846f36967abfe1314:yambar/Pkgfile
+f:a5951fe032cf51f07da0082334e70a3a:aml/.footprint
+f:26d9c66052c9a801ea6459b5d053696a:aml/.signature
+f:064037a2e5f733f0c14b0c971db12295:aml/Pkgfile
 f:6d315d94dc653bd36d63e99dc9bfdd7a:cairomm1.16/.footprint
 f:10ed41b0cb93aba15dd4b5056e62b4a2:cairomm1.16/.signature
 f:21dc3d4625b2fa356c0022aaa44db61f:cairomm1.16/Pkgfile
@@ -277,6 +286,9 @@ f:0422c671bd83104aaa6217c8ca3ef3db:babl/Pkgfile
 f:8d8bc5f56336cab354a7c1a4133168e5:wlr-randr/.footprint
 f:9d410a1a1a60da4713b66e6f95758f75:wlr-randr/.signature
 f:f9e368ec689f5257b8b7939f13ea2ff4:wlr-randr/Pkgfile
+f:9f842360b844019fe3afe3713fc689a1:wayvnc/.footprint
+f:e2bbeaff56dda69794ed7a67a492e3a7:wayvnc/.signature
+f:0fc637f8f0774ff836a9b96c98a29185:wayvnc/Pkgfile
 f:94473065047297801f9bc9ac97239167:wayland-utils/.footprint
 f:cac8cf1666c1675030135376e1ba0b04:wayland-utils/.signature
 f:d768b83f32c66c7f8facbb6591ea5279:wayland-utils/Pkgfile
